@@ -29,25 +29,25 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    {{--<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>--}}
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="homeStatic/css/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="homeStatic/css/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="homeStatic/css/bootstrap.css">
     <!-- Superfish -->
-    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="homeStatic/css/superfish.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="homeStatic/css/style.css">
 
 
     <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="homeStatic/js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="homeStatic/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -65,21 +65,21 @@
 <!-- jQuery -->
 
 
-<script src="js/jquery.min.js"></script>
+<script src="homeStatic/js/jquery.min.js"></script>
 <!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="homeStatic/js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="homeStatic/js/bootstrap.min.js"></script>
 <!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
+<script src="homeStatic/js/jquery.waypoints.min.js"></script>
 <!-- Stellar -->
-<script src="js/jquery.stellar.min.js"></script>
+<script src="homeStatic/js/jquery.stellar.min.js"></script>
 <!-- Superfish -->
-<script src="js/hoverIntent.js"></script>
-<script src="js/superfish.js"></script>
+<script src="homeStatic/js/hoverIntent.js"></script>
+<script src="homeStatic/js/superfish.js"></script>
 
 <!-- Main JS (Do not remove) -->
-<script src="js/main.js"></script>
+<script src="homeStatic/js/main.js"></script>
 
 </body>
 </html>

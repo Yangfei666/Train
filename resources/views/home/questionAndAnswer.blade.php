@@ -5,7 +5,7 @@
                 [
                     'h1' => '相关问答',
                     'p' => '你关心的,你的疑问,我都知道',
-                    'img' => 'images/home-image-2.jpg'
+                    'img' => 'homeStatic/images/home-image-2.jpg'
                 ])
     <div id="fh5co-team-section">
         <div class="container">

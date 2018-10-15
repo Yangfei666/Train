@@ -5,7 +5,7 @@
                 [
                     'h1' => '特色课程',
                     'p' => '我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题',
-                    'img' => 'images/home-image-5.jpg'
+                    'img' => 'homeStatic/images/home-image-5.jpg'
                 ])
     @include('layout.curriculum',
                [

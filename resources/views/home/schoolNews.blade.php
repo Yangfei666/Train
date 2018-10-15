@@ -6,7 +6,7 @@
                     'h1' => '学校新闻',
                     'p' => '澳洲亚太瑜伽联盟----瑜伽行业的<b>领跑者</b>。<br/>
                             为瑜伽行业提供了一个培训认证的标准示范。',
-                    'img' => 'images/home-image-4.jpg'
+                    'img' => 'homeStatic/images/home-image-4.jpg'
                 ])
     <div id="fh5co-team-section">
         <div class="container">
@@ -15,7 +15,7 @@
                     <div class="col-md-6 col-md-offset-0">
                         <div class="fh5co-blog animate-box">
                             <div class="inner-post">
-                                <a href="/newsDetail"><img class="img-responsive" src="images/home-image-4.jpg" alt=""></a>
+                                <a href="/newsDetail"><img class="img-responsive" src="homeStatic/images/home-image-4.jpg" alt=""></a>
                             </div>
                             <div class="desc">
                                 <h3><a href="/newsDetail">这里是新闻标题</a></h3>

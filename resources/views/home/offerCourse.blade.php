@@ -5,13 +5,13 @@
             [
                 'h1' => '开班信息',
                 'p' => '我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题我是副标题',
-                'img' => 'images/home-image-5.jpg'
+                'img' => 'homeStatic/images/home-image-5.jpg'
             ])
     @foreach([1,1,1] as $itme)
     <br/>
     <br/>
     <div class="fh5co-parallax"
-         style="background-image: url(images/home-image-{{$loop->index+2}}.jpg);"
+         style="background-image: url(homeStatic/images/home-image-{{$loop->index+2}}.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">

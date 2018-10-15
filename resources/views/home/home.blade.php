@@ -3,7 +3,7 @@
 @section('main')
             <div class="fh5co-hero">
                 <div class="fh5co-overlay"></div>
-                <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/home-image.jpg);">
+                <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(homeStatic/images/home-image.jpg);">
                     <div class="desc animate-box">
                         <div class="container">
                             <div class="row">
@@ -49,7 +49,7 @@
                                 <div class="schedule-content active" data-day="sunday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -57,7 +57,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -85,7 +85,7 @@
                                 <div class="schedule-content" data-day="monday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -122,7 +122,7 @@
                                 <div class="schedule-content" data-day="tuesday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -130,7 +130,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -138,7 +138,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -158,7 +158,7 @@
                                 <div class="schedule-content" data-day="wednesday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -166,7 +166,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -174,7 +174,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -182,7 +182,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -194,7 +194,7 @@
                                 <div class="schedule-content" data-day="thursday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -202,7 +202,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -210,7 +210,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -230,7 +230,7 @@
                                 <div class="schedule-content" data-day="friday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -238,7 +238,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -254,7 +254,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -266,7 +266,7 @@
                                 <div class="schedule-content" data-day="saturday">
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-dumbell.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-dumbell.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Body Building</h3>
                                             <span>John Doe</span>
@@ -274,7 +274,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-yoga.svg" alt="">
+                                            <img src="homeStatic/images/fit-yoga.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Yoga Programs</h3>
                                             <span>James Smith</span>
@@ -282,7 +282,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-cycling.svg" alt="">
+                                            <img src="homeStatic/images/fit-cycling.svg" alt="">
                                             <small>06AM-7AM</small>
                                             <h3>Cycling Program</h3>
                                             <span>Rita Doe</span>
@@ -290,7 +290,7 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="program program-schedule">
-                                            <img src="images/fit-boxing.svg" alt="Cycling">
+                                            <img src="homeStatic/images/fit-boxing.svg" alt="Cycling">
                                             <small>06AM-7AM</small>
                                             <h3>Boxing Fitness</h3>
                                             <span>John Dose</span>
@@ -305,7 +305,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fh5co-parallax" style="background-image: url(images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-parallax" style="background-image: url(homeStatic/images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -328,7 +328,7 @@
                             'num' => 6,
                             'teacher' => [1,2,3,4,5,6,7,8]
                         ])
-            <div class="fh5co-parallax" style="background-image: url(images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-parallax" style="background-image: url(homeStatic/images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -444,7 +444,7 @@
                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fh5co-blog animate-box">
                                     <div class="inner-post">
-                                        <a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="homeStatic/images/blog-1.jpg" alt=""></a>
                                     </div>
                                     <div class="desc">
                                         <h3><a href=""#>Starting new session of body building this summer</a></h3>
@@ -458,7 +458,7 @@
                             <div class="col-md-12 col-md-offset-0">
                                 <div class="fh5co-blog animate-box">
                                     <div class="inner-post">
-                                        <a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="homeStatic/images/blog-1.jpg" alt=""></a>
                                     </div>
                                     <div class="desc">
                                         <h3><a href=""#>Starting new session of body building this summer</a></h3>

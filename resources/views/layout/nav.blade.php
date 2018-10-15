@@ -32,17 +32,16 @@
                         <li><a href="/Student">学员与就业</a>
                             <ul class="fh5co-sub-menu">
                                 <li><a href="/Student">学员展示</a></li>
-                                <li><a href="right-sidebar.html">证书查询</a></li>
+                                <li><a href="/certificate">证书查询</a></li>
                                 <li><a href="#" class="fh5co-sub-ddown">就业</a></li>
                             </ul></li>
-                        <li><a href="about.html">瑜伽资讯</a>
+                        <li><a href="/knowledge">瑜伽资讯</a>
                             <ul class="fh5co-sub-menu">
-                                <li><a href="left-sidebar.html">瑜伽知识</a></li>
-                                <li><a href="right-sidebar.html">瑜伽新闻</a></li>
+                                <li><a href="/knowledge">瑜伽知识</a></li>
+                                <li><a href="/yogaNews">瑜伽新闻</a></li>
                             </ul></li></li>
-                        <li><a href="schedule.html">导师团队</a></li>
-                        <li><a href="contact.html">报名通道</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="/teacher">导师团队</a></li>
+                        <li><a href="/contact">报名/联系</a></li>
                     </ul>
                 </nav>
             </div>

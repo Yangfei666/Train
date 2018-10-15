@@ -17,11 +17,6 @@ class SchoolController extends Controller
     {
         return view('home/schoolNews');
     }
-    // 新闻详情
-    public function newsDetail ()
-    {
-        return view('home/newsDetail');
-    }
     // 问答
     public function questionAndAnswer ()
     {

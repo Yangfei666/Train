@@ -5,7 +5,7 @@
             [
                 'h1' => '半年制导师班',
                 'p' => '我是概要我是概要我是概要我是概要我是概要我是概要我是概要我是概要我是概要我是概要',
-                'img' => 'images/home-image-5.jpg'
+                'img' => 'homeStatic/images/home-image-5.jpg'
             ])
     @include('layout.content',
                 [
