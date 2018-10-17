@@ -13,7 +13,7 @@
                 @endif
                 <div class="col-md-4 col-sm-6">
                     <div class="program animate-box">
-                        <img src="images/home-image-5.jpg" style="width: 100%;">
+                        <img src="homeStatic/images/home-image-5.jpg" style="width: 100%;">
                         <h3>空中瑜伽</h3>
                         <p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍 </p>
                         <span><a href="/curriculumDetail" class="btn btn-default">查看详情</a></span>

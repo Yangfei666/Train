@@ -37,3 +37,15 @@ Route::get('/teacher', '\App\Http\Controllers\Home\TeacherController@teacher');/
 Route::get('/teacherDetail', '\App\Http\Controllers\Home\TeacherController@teacherDetail');// 老师详情
 /*联系报名*/
 Route::get('/contact', '\App\Http\Controllers\Home\ContactController@contact');// 联系报名页面
+
+
+/**
+ * 后台路由
+*/
+/*后台首页*/
+Route::get('/admin', '\App\Http\Controllers\Admin\AdminHomeController@index');
+/* 学校模块 */
+Route::get('/admin/schoolIntroduce', '\App\Http\Controllers\Admin\SchoolController@index');// 学校介绍
+Route::get('/admin/schoolNews', '\App\Http\Controllers\Admin\SchoolController@schoolNews');// 学校新闻
+Route::get('/admin/questionAndAnswer', '\App\Http\Controllers\Admin\SchoolController@questionAndAnswer');// 相关问答
+Route::get('/admin/environment', '\App\Http\Controllers\Admin\SchoolController@environment');// 学校环境

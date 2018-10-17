@@ -34,7 +34,7 @@
             </form>
             <div class="row" style="padding-top: 50px;">
                 <div class="col-md-2"></div>
-                <img class="col-md-8" src="images/trainer-5.jpg">
+                <img class="col-md-8" src="homeStatic/images/trainer-5.jpg">
             </div>
         </div>
     </div>
