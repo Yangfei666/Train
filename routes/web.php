@@ -12,9 +12,10 @@
 */
 
 // 首页
-Route::get('/', function () {
-	return Redirect::to('home');
-});
+Route::redirect('/', '/home', 301);//重定向
+// Route::get('/', function () {
+// 	return Redirect::to('home');
+// });
 Route::get('/home', '\App\Http\Controllers\Home\HomeController@index');
 /*学校模块*/
 Route::get('/schoolIntroduce', '\App\Http\Controllers\Home\SchoolController@index');// 学校介绍
@@ -45,10 +46,12 @@ Route::get('/contact', '\App\Http\Controllers\Home\ContactController@contact');/
 /**
  * 后台路由
 */
-/*后台首页*/
-Route::get('/admin', '\App\Http\Controllers\Admin\AdminHomeController@index');
-/* 学校模块 */
-Route::get('/admin/schoolIntroduce', '\App\Http\Controllers\Admin\SchoolController@index');// 学校介绍
-Route::get('/admin/schoolNews', '\App\Http\Controllers\Admin\SchoolController@schoolNews');// 学校新闻
-Route::get('/admin/questionAndAnswer', '\App\Http\Controllers\Admin\SchoolController@questionAndAnswer');// 相关问答
-Route::get('/admin/environment', '\App\Http\Controllers\Admin\SchoolController@environment');// 学校环境
+Route::group(['prefix' => '/admin'], function () {
+	/*后台首页*/
+	Route::get('/', '\App\Http\Controllers\Admin\AdminHomeController@index');
+	/* 学校模块 */
+	Route::get('/schoolIntroduce', '\App\Http\Controllers\Admin\SchoolController@index');// 学校介绍
+	Route::get('/schoolNews', '\App\Http\Controllers\Admin\SchoolController@schoolNews');// 学校新闻
+	Route::get('/questionAndAnswer', '\App\Http\Controllers\Admin\SchoolController@questionAndAnswer');// 相关问答
+	Route::get('/environment', '\App\Http\Controllers\Admin\SchoolController@environment');// 学校环境
+});
