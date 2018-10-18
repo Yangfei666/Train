@@ -305,7 +305,7 @@
                     </div>
                 </div>
             </div> -->
-            <div class="fh5co-parallax" style="background-image: url(homeStatic/images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+            <!-- <div class="fh5co-parallax" style="background-image: url(homeStatic/images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- end: fh5co-parallax -->
+            </div><!-- end: fh5co-parallax --> -->
             @include('layout.curriculum',
                        [
                            'num' => 6,
