@@ -12,6 +12,9 @@
 */
 
 // 首页
+Route::get('/', function () {
+	return Redirect::to('home');
+});
 Route::get('/home', '\App\Http\Controllers\Home\HomeController@index');
 /*学校模块*/
 Route::get('/schoolIntroduce', '\App\Http\Controllers\Home\SchoolController@index');// 学校介绍
