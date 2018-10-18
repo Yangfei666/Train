@@ -12,7 +12,9 @@
         <div class="container">
             <form action="#">
                 <div class="row">
-                    <div class="col-md-6 animate-box">
+                    <div class="col-md-2 animate-box">
+                    </div>
+                    <div class="col-md-8 animate-box">
                         <h3 class="section-title">联系我们</h3>
                         <p>我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介</p>
                         <ul class="contact-info">
@@ -22,7 +24,7 @@
                             <li><i class="icon-globe2"></i><a href="http://www.yujiacun.net">www.yujiacun.net</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 animate-box">
+                    <!-- <div class="col-md-6 animate-box">
                         <h3 class="section-title">留言报名</h3>
                         <div class="row">
                             <div class="col-md-6">
@@ -46,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </form>
         </div>

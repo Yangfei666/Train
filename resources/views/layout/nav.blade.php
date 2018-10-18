@@ -15,7 +15,7 @@
                             <a href="/schoolIntroduce" class="fh5co-sub-ddown">学校简介</a>
                             <ul class="fh5co-sub-menu">
                                 <li><a href="/schoolIntroduce">学校介绍</a></li>
-                                <li><a href="/schoolNews">学校新闻</a></li>
+                                <!-- <li><a href="/schoolNews">学校新闻</a></li> -->
                                 <li><a href="/questionAndAnswer" class="fh5co-sub-ddown">有关问答</a></li>
                                 <li><a href="/environment">学校环境</a></li>
                             </ul>
@@ -25,21 +25,25 @@
                             <ul class="fh5co-sub-menu">
                                 <li><a href="/offerCourse">开班信息</a></li>
                                 <li><a href="/specialCourse">特色课程</a></li>
-                                <li><a href="#" class="fh5co-sub-ddown">工作坊</a></li>
+                                <li><a href="#" class="fh5co-sub-ddown">工作XX</a></li>
                                 <li><a href="#">后续培训</a></li>
                             </ul>
                         </li>
-                        <li><a href="/Student">学员与就业</a>
+                        <li>
+                            <a href="/Student">学员与就业</a>
                             <ul class="fh5co-sub-menu">
                                 <li><a href="/Student">学员展示</a></li>
-                                <li><a href="/certificate">证书查询</a></li>
+                                <!-- <li><a href="/certificate">证书查询</a></li> -->
                                 <li><a href="#" class="fh5co-sub-ddown">就业</a></li>
-                            </ul></li>
-                        <li><a href="/knowledge">瑜伽资讯</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/knowledge">瑜伽资讯</a>
                             <ul class="fh5co-sub-menu">
                                 <li><a href="/knowledge">瑜伽知识</a></li>
                                 <li><a href="/yogaNews">瑜伽新闻</a></li>
-                            </ul></li></li>
+                            </ul>
+                        </li>
                         <li><a href="/teacher">导师团队</a></li>
                         <li><a href="/contact">报名/联系</a></li>
                     </ul>
