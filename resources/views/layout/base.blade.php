@@ -9,8 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>澳洲亚太瑜伽联盟</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Template by FREEHTML5" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="description" content="世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。" />
+    <meta name="author" content="Help yourself" />
+    <meta name="keywords" content="瑜伽教练,瑜伽学校，瑜伽培训,瑜伽教练培训,瑜伽老师培训,瑜伽证书,瑜伽教练资格证,瑜伽教练证怎么考,瑜伽教练培训学校,上海瑜伽教练培训,上海瑜伽学校,中国瑜伽联盟" />
 
 
 
