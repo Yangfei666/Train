@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Home;
 
+use App\Question;
 use App\School;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -22,7 +23,8 @@ class SchoolController extends Controller
     // 问答
     public function questionAndAnswer ()
     {
-        return view('home/questionAndAnswer');
+        $questions = Question::orderBy('id', 'desc')->paginate (10);
+        return view('home/questionAndAnswer', compact('questions'));
     }
     // 环境
     public function environment ()

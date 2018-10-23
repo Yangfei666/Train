@@ -1,5 +1,4 @@
 @extends('adminLayout.base')
-
 @section('link')
     {{--<link rel="stylesheet" type="text/css" href="/adminStatic/plugins/colorpicker/colorpicker.css" media="screen">--}}
     {{--<link rel="stylesheet" type="text/css" href="/adminStatic/custom-plugins/picklist/picklist.css" media="screen">--}}
@@ -16,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/icons/icol16.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/icons/icol32.css" media="screen">
 
-    {{--<!-- Demo Stylesheet -->--}}
+    <!-- Demo Stylesheet -->
     {{--<link rel="stylesheet" type="text/css" href="/adminStatic/css/demo.css" media="screen">--}}
 
     {{--<!-- jQuery-UI Stylesheet -->--}}
@@ -27,44 +26,51 @@
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/mws-theme.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/themer.css" media="screen">
 @endsection
-
 @section('main')
-        <!-- Main Container Start -->
-        <div id="mws-container" class="clearfix">
-            <div class="container">
-                @include('adminLayout.errors')
-                <div class="mws-panel grid_8">
+    <!-- Main Container Start -->
+    <!-- Main Container End -->
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            @include('adminLayout.errors')
+            <div class="grid_8">
+                <div class="mws-panel">
                     <div class="mws-panel-header">
-                        <span><i class="icon-pencil-2"></i> 编辑学校介绍</span>
+                        <span>
+                            <i class="icon-calculate"></i>
+                            问答{{$questions ? '编辑' : '添加'}}
+                        </span>
                     </div>
                     <div class="mws-panel-body no-padding">
-                        <form class="mws-form" action="/admin/editSchoolIntroduce" method="post">
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">概要<span class="required">*</span></label>
-                                <div class="mws-form-item">
-                                    <input type="text" class="large" name="abstract" value="{{$school->abstract}}">
-                                    {{csrf_field()}}
-                                    {{method_field('put')}}
+                        <form class="mws-form" action="/admin/addQuestionAndAnswer" method="post">
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">问题</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name="question"
+                                               value="{{$questions ? $questions->question : ''}}">
+                                        <input type="hidden" class="large" name="id"
+                                               value="{{$questions ? $questions->id : '-1'}}">
+                                        {{csrf_field()}}
+                                        {{$questions ? method_field('put') : method_field('post')}}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">内容<span class="required">*</span></label>
-                                <div class="mws-form-item">
-                                    <textarea id="cleditor" class="large" name="content">
-                                         {{$school->content}}
-                                    </textarea>
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">回答</label>
+                                    <div class="mws-form-item">
+                                        <textarea rows="" cols="" class="large autosize" name="answer">{{$questions ? $questions->answer : ''}}
+                                        </textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mws-button-row">
-                                <input type="submit" value="提交" class="btn btn-danger">
+                                <div class="mws-button-row">
+                                    <input type="submit" value="提交" class="btn btn-danger">
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Main Container End -->
-
+    </div>
 @endsection
 
 @section('link2')

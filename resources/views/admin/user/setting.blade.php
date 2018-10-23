@@ -1,5 +1,4 @@
 @extends('adminLayout.base')
-
 @section('link')
     {{--<link rel="stylesheet" type="text/css" href="/adminStatic/plugins/colorpicker/colorpicker.css" media="screen">--}}
     {{--<link rel="stylesheet" type="text/css" href="/adminStatic/custom-plugins/picklist/picklist.css" media="screen">--}}
@@ -27,47 +26,58 @@
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/mws-theme.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/adminStatic/css/themer.css" media="screen">
 @endsection
-
 @section('main')
-        <!-- Main Container Start -->
-        <div id="mws-container" class="clearfix">
-            <div class="container">
-                @include('adminLayout.errors')
-                <div class="mws-panel grid_8">
+    <!-- Main Container Start -->
+    <!-- Main Container End -->
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            @include('adminLayout.errors')
+            <div class="grid_8">
+                <div class="mws-panel">
                     <div class="mws-panel-header">
-                        <span><i class="icon-pencil-2"></i> 编辑学校介绍</span>
+                        <span>
+                            <i class="icon-calculate"></i>
+                            修改密码
+                        </span>
                     </div>
                     <div class="mws-panel-body no-padding">
-                        <form class="mws-form" action="/admin/editSchoolIntroduce" method="post">
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">概要<span class="required">*</span></label>
-                                <div class="mws-form-item">
-                                    <input type="text" class="large" name="abstract" value="{{$school->abstract}}">
-                                    {{csrf_field()}}
-                                    {{method_field('put')}}
+                        <form class="mws-form" action="/admin/addQuestionAndAnswer" method="post">
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">原密码</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name="oldPassword" >
+                                        {{csrf_field()}}
+                                        {{method_field('put')}}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">内容<span class="required">*</span></label>
-                                <div class="mws-form-item">
-                                    <textarea id="cleditor" class="large" name="content">
-                                         {{$school->content}}
-                                    </textarea>
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">新密码</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name="password" >
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mws-button-row">
-                                <input type="submit" value="提交" class="btn btn-danger">
+                                <div class="mws-form-row">
+                                    <label class="mws-form-label">确认密码</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name="repassword" >
+                                    </div>
+                                </div>
+
+                                <div class="mws-button-row">
+                                    <input type="submit" value="确定更改" class="btn btn-danger">
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Main Container End -->
-
+    </div>
 @endsection
 
 @section('link2')
+    {{--@parent--}}
     <!-- JavaScript Plugins -->
     <script src="/adminStatic/js/libs/jquery-1.8.3.min.js"></script>
     <script src="/adminStatic/js/libs/jquery.mousewheel.min.js"></script>

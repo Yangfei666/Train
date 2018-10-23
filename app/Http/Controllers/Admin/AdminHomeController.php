@@ -10,6 +10,6 @@ class AdminHomeController extends Controller
     //首页
     public function index()
     {
-        return view('admin.adminHome', ['name' => '张三', 'arr' => [1,1,1,1,1,1,1]]);
+        return view('admin.adminHome');
     }
 }

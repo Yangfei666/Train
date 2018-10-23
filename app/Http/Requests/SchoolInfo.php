@@ -14,8 +14,8 @@ class SchoolInfo extends FormRequest
     public function rules()
     {
         return [
-            'abstract' => 'required|string|max:100|min:3',
-            'content' => 'required|max:20000|min:3',
+            'abstract' => 'required|string|max:1000|min:10',
+            'content' => 'required|max:20000|min:100',
         ];
     }
 

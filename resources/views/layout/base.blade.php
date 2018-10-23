@@ -44,6 +44,9 @@
     <link rel="stylesheet" href="homeStatic/css/style.css">
 
 
+    <link rel="stylesheet" href="homeStatic/css/mycss.css">
+
+
     <!-- Modernizr JS -->
     <script src="homeStatic/js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->

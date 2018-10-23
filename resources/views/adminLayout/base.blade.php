@@ -10,8 +10,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
     @section('link')
         <!-- Plugin Stylesheets first to ease overrides -->
-        <link rel="stylesheet" type="text/css" href="/adminStatic/plugins/colorpicker/colorpicker.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="/adminStatic/custom-plugins/wizard/wizard.css" media="screen">
+        {{--<link rel="stylesheet" type="text/css" href="/adminStatic/plugins/colorpicker/colorpicker.css" media="screen">--}}
+        {{--<link rel="stylesheet" type="text/css" href="/adminStatic/custom-plugins/wizard/wizard.css" media="screen">--}}
 
         <!-- Required Stylesheets -->
         <link rel="stylesheet" type="text/css" href="/adminStatic/bootstrap/css/bootstrap.min.css" media="screen">
@@ -22,12 +22,12 @@
         <link rel="stylesheet" type="text/css" href="/adminStatic/css/icons/icol16.css" media="screen">
         <link rel="stylesheet" type="text/css" href="/adminStatic/css/icons/icol32.css" media="screen">
 
-        <!-- Demo Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/adminStatic/css/demo.css" media="screen">
+        {{--<!-- Demo Stylesheet -->--}}
+        {{--<link rel="stylesheet" type="text/css" href="/adminStatic/css/demo.css" media="screen">--}}
 
-        <!-- jQuery-UI Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/adminStatic/jui/css/jquery.ui.all.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="/adminStatic/jui/jquery-ui.custom.css" media="screen">
+        {{--<!-- jQuery-UI Stylesheet -->--}}
+        {{--<link rel="stylesheet" type="text/css" href="/adminStatic/jui/css/jquery.ui.all.css" media="screen">--}}
+        {{--<link rel="stylesheet" type="text/css" href="/adminStatic/jui/jquery-ui.custom.css" media="screen">--}}
 
         <!-- Theme Stylesheet -->
         <link rel="stylesheet" type="text/css" href="/adminStatic/css/mws-theme.css" media="screen">
@@ -35,17 +35,10 @@
     @show
 
 
-<title>澳洲亚太瑜伽联盟</title>
-    <style>
-        #mws-sidebar .mws-navigation a+ul {
-            display: none;
-        }
-        .error-div{
-            margin: 0px 1% !important;
-            background: #F8E2E2;
-            color:#C24848;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/adminStatic/css/mycss.css" media="screen">
+
+    <title>澳洲亚太瑜伽联盟</title>
+
 
 </head>
 
@@ -61,10 +54,7 @@
 		<div id="mws-sidebar-bg"></div>
 
         <!-- Sidebar Wrapper -->
-        @include('adminLayout.nav', [
-            'name' => $name,
-            'arr' => $arr
-        ])
+        @include('adminLayout.nav')
 
         <!-- Main Container Start -->
          @yield('main')
@@ -78,24 +68,24 @@
         <script src="/adminStatic/js/libs/jquery.placeholder.min.js"></script>
         <script src="/adminStatic/custom-plugins/fileinput.js"></script>
 
-        <!-- jQuery-UI Dependent Scripts -->
-        <script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>
-        <script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>
-        <script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>
+        {{--<!-- jQuery-UI Dependent Scripts -->--}}
+        {{--<script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>--}}
+        {{--<script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>--}}
+        {{--<script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>--}}
 
-        <!-- Plugin Scripts -->
-        <script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>
-        <!--[if lt IE 9]>
-        <script src="/adminStatic/js/libs/excanvas.min.js"></script>
-        <![endif]-->
-        <script src="/adminStatic/plugins/flot/jquery.flot.min.js"></script>
-        <script src="/adminStatic/plugins/flot/plugins/jquery.flot.tooltip.min.js"></script>
-        <script src="/adminStatic/plugins/flot/plugins/jquery.flot.pie.min.js"></script>
-        <script src="/adminStatic/plugins/flot/plugins/jquery.flot.stack.min.js"></script>
-        <script src="/adminStatic/plugins/flot/plugins/jquery.flot.resize.min.js"></script>
-        <script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>
-        <script src="/adminStatic/plugins/validate/jquery.validate-min.js"></script>
-        <script src="/adminStatic/custom-plugins/wizard/wizard.min.js"></script>
+        {{--<!-- Plugin Scripts -->--}}
+        {{--<script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>--}}
+        {{--<!--[if lt IE 9]>--}}
+        {{--<script src="/adminStatic/js/libs/excanvas.min.js"></script>--}}
+        {{--<![endif]-->--}}
+        {{--<script src="/adminStatic/plugins/flot/jquery.flot.min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/flot/plugins/jquery.flot.tooltip.min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/flot/plugins/jquery.flot.pie.min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/flot/plugins/jquery.flot.stack.min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/flot/plugins/jquery.flot.resize.min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>--}}
+        {{--<script src="/adminStatic/plugins/validate/jquery.validate-min.js"></script>--}}
+        {{--<script src="/adminStatic/custom-plugins/wizard/wizard.min.js"></script>--}}
 
         <!-- Core Script -->
         <script src="/adminStatic/bootstrap/js/bootstrap.min.js"></script>

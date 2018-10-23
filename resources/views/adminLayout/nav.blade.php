@@ -9,7 +9,7 @@
                     <li><a href="/admin/schoolIntroduce">学校简介</a></li>
                     <li><a href="form_elements.html">学校新闻</a></li>
                     <li><a href="form_wizard.html">学校环境</a></li>
-                    <li><a href="form_wizard.html">有关问答</a></li>
+                    <li><a href="/admin/questionAndAnswer">有关问答</a></li>
                 </ul>
             </li>
             <li>
