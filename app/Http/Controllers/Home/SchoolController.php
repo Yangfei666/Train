@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Home;
 
+use App\School;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -10,7 +11,8 @@ class SchoolController extends Controller
     // 介绍
     public function index ()
     {
-        return view('home/schoolIntroduce');
+        $schoolInfo = School::first();
+        return view('home/schoolIntroduce', compact('schoolInfo'));
     }
     //新闻列表
     public function schoolNews ()

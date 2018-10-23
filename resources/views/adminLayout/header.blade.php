@@ -5,7 +5,7 @@
 
         <!-- Logo Wrapper, images put within this wrapper will always be vertically centered -->
         <div id="mws-logo-wrap">
-            <img src="adminStatic/images/mws-logo.png">
+            <img src="/adminStatic/images/mws-logo.png">
         </div>
     </div>
 
@@ -107,7 +107,7 @@
 
             <!-- User Photo -->
             <div id="mws-user-photo">
-                <img src="adminStatic/example/profile.jpg" alt="User Photo">
+                <img src="/adminStatic/example/profile.jpg" alt="User Photo">
             </div>
 
             <!-- Username and Functions -->

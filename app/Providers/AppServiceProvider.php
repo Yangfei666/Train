@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //laravel默认字符串编码mb4string,4个字符对应一个汉字,191对应utf-8编码255
+        Schema::defaultStringLength(191);
     }
 
     /**

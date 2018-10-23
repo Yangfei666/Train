@@ -50,12 +50,13 @@ Route::namespace('Home')->group(function () {
 /**
  * 后台路由
 */
-Route::prefix('admin')->group(function () {
+Route::namespace('Admin')->prefix('admin')->group(function () {
 	/*后台首页*/
-	Route::get('/', '\App\Http\Controllers\Admin\AdminHomeController@index');
+	Route::get('/', 'AdminHomeController@index');
 	/* 学校模块 */
-	Route::get('/schoolIntroduce', '\App\Http\Controllers\Admin\SchoolController@index');// 学校介绍
-	Route::get('/schoolNews', '\App\Http\Controllers\Admin\SchoolController@schoolNews');// 学校新闻
-	Route::get('/questionAndAnswer', '\App\Http\Controllers\Admin\SchoolController@questionAndAnswer');// 相关问答
-	Route::get('/environment', '\App\Http\Controllers\Admin\SchoolController@environment');// 学校环境
+	Route::get('/schoolIntroduce', 'SchoolController@index');// 学校介绍页面
+	Route::post('/editSchoolIntroduce', 'SchoolController@editSchoolIntroduce');// 编辑学校介绍
+	Route::get('/schoolNews', 'SchoolController@schoolNews');// 学校新闻
+	Route::get('/questionAndAnswer', 'SchoolController@questionAndAnswer');// 相关问答
+	Route::get('/environment', 'SchoolController@environment');// 学校环境
 });
