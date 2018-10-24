@@ -45,11 +45,11 @@
 
             <div id="mws-user-functions">
                 <div id="mws-username">
-                    Hello, {{\Auth::user()->name}}
+                    Hello, {{\Auth::guard('admin')->user()->name}}
                 </div>
                 <ul>
                     <li><a href="/admin/user/me/setting">修改密码</a></li>
-                    <li><a href="/admin/user/logout">退出</a></li>
+                    <li><a href="/admin/logout">退出</a></li>
                 </ul>
             </div>
         </div>

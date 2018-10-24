@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\IdValidate;
 use App\Http\Requests\QuestionAndAnswer;
 use App\Http\Requests\SchoolInfo;
-use App\Question;
-use App\School;
+use App\Models\Question;
+use App\Models\School;
 use App\Http\Controllers\Controller;
 
 class SchoolController extends Controller

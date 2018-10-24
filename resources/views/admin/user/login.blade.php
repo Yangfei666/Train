@@ -29,10 +29,10 @@
         <h1>登录</h1>
         <div class="mws-login-lock"><i class="icon-lock"></i></div>
         <div id="mws-login-form">
-            <form class="mws-form" action="/admin/user/login" method="post">
+            <form class="mws-form" action="/admin/login" method="post">
                 <div class="mws-form-row">
                     <div class="mws-form-item">
-                        <input type="text" name="email" class="mws-login-username required" placeholder="帐号(邮箱)">
+                        <input type="text" name="name" class="mws-login-username required" placeholder="用户名">
                         {{csrf_field()}}
                     </div>
                 </div>

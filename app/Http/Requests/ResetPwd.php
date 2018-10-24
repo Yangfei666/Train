@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class Login extends FormRequest
+class ResetPwd extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,9 @@ class Login extends FormRequest
     public function rules()
     {
         return [
-            'tel' => 'regex:/^[1][3,5,6,7,8,9][0-9]{9}$/',
+            'oldPassword' => 'required|min:6|max:18',
             'password' => 'required|min:6|max:18',
-            'remember' => 'integer|in:1'
+            'rePassword' => 'required|min:6|max:18',
         ];
     }
 }

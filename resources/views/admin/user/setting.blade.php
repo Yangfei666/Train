@@ -44,7 +44,7 @@
                         <form class="mws-form" action="/admin/addQuestionAndAnswer" method="post">
                             <div class="mws-form-inline">
                                 <div class="mws-form-row">
-                                    <label class="mws-form-label">原密码</label>
+                                    <label class="mws-form-label">原密码<span class="required">*</span></label>
                                     <div class="mws-form-item">
                                         <input type="text" class="large" name="oldPassword" >
                                         {{csrf_field()}}
@@ -52,15 +52,15 @@
                                     </div>
                                 </div>
                                 <div class="mws-form-row">
-                                    <label class="mws-form-label">新密码</label>
+                                    <label class="mws-form-label">新密码<span class="required">*</span></label>
                                     <div class="mws-form-item">
                                         <input type="text" class="large" name="password" >
                                     </div>
                                 </div>
                                 <div class="mws-form-row">
-                                    <label class="mws-form-label">确认密码</label>
+                                    <label class="mws-form-label">确认密码<span class="required">*</span></label>
                                     <div class="mws-form-item">
-                                        <input type="text" class="large" name="repassword" >
+                                        <input type="text" class="large" name="rePassword" >
                                     </div>
                                 </div>
 

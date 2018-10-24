@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class QuestionsTableSeeder extends Seeder
+class AdminsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class QuestionsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Question::class, 20)->create();
+        factory(App\Models\Admin::class, 5)->create(['password' => bcrypt(123456)]);
     }
 }
