@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Home;
 
-use App\Question;
-use App\School;
+use App\Models\Question;
+use App\Models\School;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

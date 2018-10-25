@@ -17,7 +17,7 @@ class AuthAdmin
     {
         if (auth()->guard('admin')->guest()) {
             if ($request->ajax() || $request->wantsJson()) {
-                return response('未授权.', 401);
+                return response('未授权', 401);
             } else {
                 return redirect()->guest('admin/login');
             }

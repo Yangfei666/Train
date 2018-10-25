@@ -39,6 +39,7 @@ class UserController extends Controller
     {
         return 'name';
     }
+
 //    public function aaa()
 //    {
 //        $password = bcrypt(request('password'));
@@ -46,11 +47,13 @@ class UserController extends Controller
 //        $email = request('email');
 //        $user = \App\User::create(compact('name', 'email', 'password'));
 //    }
+
     //登录页面
     public function index()
     {
         return view('admin.user.login');
     }
+
     //登录
     public function login(Login $request)
     {
@@ -62,6 +65,7 @@ class UserController extends Controller
         return \Redirect::back()->withErrors("帐号或密码错误");
 
     }
+
     //登出
     public function logout()
     {
@@ -69,11 +73,13 @@ class UserController extends Controller
         return redirect('/admin/login');
 
     }
+
     //修改密码页面
     public function setting()
     {
         return view('admin.user.setting');
     }
+
     //修改密码
     public function settingStore(ResetPwd $resetPwd)
     {
