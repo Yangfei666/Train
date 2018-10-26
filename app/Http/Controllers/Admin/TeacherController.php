@@ -10,12 +10,13 @@ use Illuminate\Support\Facades\Storage;
 
 class TeacherController extends Controller
 {
+    // 列表
     public function teacherList ()
     {
         $teachers = Teacher::paginate (5);
         return view('admin.teacher.teacher', compact('teachers'));
     }
-    // 添加
+    // 添加页面
     public function addPage()
     {
         return view('admin.teacher.addTeacher');
@@ -60,11 +61,17 @@ class TeacherController extends Controller
     // 详情
     public function infoTeacher(Teacher $teacher)
     {
-
+        return view('admin/teacher/info', compact('teacher'));
+    }
+    // 编辑页面
+    public function editPage(Teacher $teacher)
+    {
+        return view('admin.teacher.edit', compact('teacher'));
     }
     // 编辑
     public function editTeacher(Teacher $teacher)
     {
+
 
     }
     // 删除

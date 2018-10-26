@@ -36,7 +36,9 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
         Route::get('/environment', 'SchoolController@environment');// 学校环境
         /* 老师模块 */
         Route::get('/teacherList', 'TeacherController@teacherList');// 老师列表
-        Route::get('/addPage', 'TeacherController@addPage');// 老师列表
+        Route::get('/addPage', 'TeacherController@addPage');// 老师添加页面
+        Route::get('/editPage/{teacher}', 'TeacherController@editPage');// 老师编辑页面
+        Route::get('/infoTeacher/{teacher}', 'TeacherController@infoTeacher');// 老师详情
         Route::post('/addTeacher', 'TeacherController@addTeacher');// 老师添加
         Route::put('/editTeacher/{teacher}', 'TeacherController@editTeacher');// 老师编辑
         Route::put('/infoTeacher/{teacher}', 'TeacherController@infoTeacher');// 老师详情

@@ -17,34 +17,27 @@
                 </div>
                 <div class="mws-panel-body no-padding">
                     <table class="mws-table">
-                        <thead>
-                        <tr>
-                            <th>照片</th>
-                            <th>姓名</th>
-                            <th>级别</th>
-                            <th>操作</th>
-                        </tr>
-                        </thead>
                         <tbody>
-                        @foreach($teachers as $teacher)
                             <tr>
+                                <td>照片</td>
                                 <td><img src="{{$teacher->img}}" style="width:100px"></td>
+                            </tr><tr>
+                                <td>姓名</td>
                                 <td>{{$teacher->name}}</td>
+                            </tr><tr>
+                                <td>级别</td>
                                 <td>{{$teacher->level}}</td>
-                                <td class="checkbox-column">
-                                <span class="btn-group">
-                                    <a href="/admin/infoTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-search"></i></a>
-                                    <a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>
-                                    <a href="/admin/deleteTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
-                                </span>
-                                </td>
+                            </tr><tr>
+                                <td>简述</td>
+                                <td>{{$teacher->summary}}</td>
+                            </tr><tr>
+                                <td>详述</td>
+                                <td>{!! $teacher->content !!}</td>
                             </tr>
-                        @endforeach
                         </tbody>
                     </table>
                 </div>
                 <div class="mws-panel-toolbar">
-                    {{ $teachers->links() }}
                 </div>
             </div>
         </div>
