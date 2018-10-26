@@ -29,41 +29,61 @@
 @endsection
 
 @section('main')
-        <!-- Main Container Start -->
-        <div id="mws-container" class="clearfix">
-            <div class="container">
-                @include('adminLayout.errors')
-                <div class="mws-panel grid_8">
-                    <div class="mws-panel-header">
-                        <span><i class="icon-pencil-2"></i> 编辑学校介绍</span>
-                    </div>
-                    <div class="mws-panel-body no-padding">
-                        <form class="mws-form" action="/admin/editSchoolIntroduce" method="post">
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">概要<span class="required">*</span></label>
-                                <div class="mws-form-item">
-                                    <input type="text" class="large" name="abstract" value="{{$school->abstract}}">
-                                    {{csrf_field()}}
-                                    {{method_field('put')}}
-                                </div>
+    <!-- Main Container Start -->
+    <div id="mws-container" class="clearfix">
+        <div class="container">
+            @include('adminLayout.errors')
+            <div class="mws-panel grid_8">
+                <div class="mws-panel-header">
+                    <span><i class="icon-pencil-2"></i> 添加老师</span>
+                </div>
+                <div class="mws-panel-body no-padding">
+                    <form class="mws-form" action="/admin/addTeacher" method="post" enctype="multipart/form-data">
+                        <div class="mws-form-row">
+                            <label class="mws-form-label">姓名<span class="required">*</span></label>
+                            <div class="mws-form-item">
+                                <input type="text" class="large" name="name">
+                                {{csrf_field()}}
                             </div>
-                            <div class="mws-form-row">
-                                <label class="mws-form-label">内容<span class="required">*</span></label>
-                                <div class="mws-form-item">
+                        </div>
+                        <div class="mws-form-row">
+                            <label class="mws-form-label">照片<span class="required">*</span></label>
+                            <div class="mws-form-item">
+                                <input type="file" name="img">
+                            </div>
+                        </div>
+                        <div class="mws-form-row">
+                            <label class="mws-form-label">级别<span class="required">*</span></label>
+                            <div class="mws-form-item clearfix">
+                                <ul class="mws-form-list inline">
+                                    <li><input type="radio" name="level" value="高级导师"> <label>高级导师</label></li>
+                                    <li><input type="radio" name="level" value="特级导师"> <label>特级导师</label></li>
+                                    <li><input type="radio" name="level" value="特邀导师"> <label>特邀导师</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mws-form-row">
+                            <label class="mws-form-label">概述<span class="required">*</span></label>
+                            <div class="mws-form-item">
+                                <input type="text" class="large" name="summary">
+                            </div>
+                        </div>
+                        <div class="mws-form-row">
+                            <label class="mws-form-label">详情介绍<span class="required">*</span></label>
+                            <div class="mws-form-item">
                                     <textarea id="cleditor" class="large" name="content">
-                                         {{--{{$school->content}}--}}
                                     </textarea>
-                                </div>
                             </div>
-                            <div class="mws-button-row">
-                                <input type="submit" value="提交" class="btn btn-danger">
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <input type="submit" value="提交" class="btn btn-danger">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Main Container End -->
+    </div>
+    <!-- Main Container End -->
 
 @endsection
 

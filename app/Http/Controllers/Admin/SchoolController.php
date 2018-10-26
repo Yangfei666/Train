@@ -36,7 +36,7 @@ class SchoolController extends Controller
     public function questionAndAnswer ()
     {
         $questions = Question::orderBy('id', 'desc')->paginate (5);
-        return view('admin/school/questionAndAnswer', ['name' => '张三', 'arr' => [1,1,1,1,1,1,1], 'questions' => $questions]);
+        return view('admin/school/questionAndAnswer', compact('questions'));
     }
 
     // 添加/编辑问答页面
@@ -47,7 +47,7 @@ class SchoolController extends Controller
         } else {
             $questions = Question::find($num);
         }
-        return view('admin.school.addQuestionLayout',['name' => '张三', 'arr' => [1,1,1,1,1,1,1], 'questions' => $questions]);
+        return view('admin.school.addQuestionLayout', compact('questions'));
     }
 
     // 添加/编辑问答

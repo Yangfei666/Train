@@ -36,7 +36,7 @@
                     <li><a href="form_elements.html">瑜伽新闻管理</a></li>
                 </ul>
             </li>
-            <li><a href="widgets.html"><i class="icon-cogs"></i> 导师管理</a></li>
+            <li><a href="/admin/teacherList"><i class="icon-cogs"></i> 导师管理</a></li>
         </ul>
     </div>
 </div>

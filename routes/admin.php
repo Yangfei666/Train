@@ -34,6 +34,13 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
         Route::match(['put', 'post'], '/addQuestionAndAnswer', 'SchoolController@addQuestionAndAnswer');// 相关问答添加/编辑
         Route::get('/deleteQuestionAndAnswer/{question}', 'SchoolController@deleteQuestionAndAnswer');// 相关问答删除
         Route::get('/environment', 'SchoolController@environment');// 学校环境
+        /* 老师模块 */
+        Route::get('/teacherList', 'TeacherController@teacherList');// 老师列表
+        Route::get('/addPage', 'TeacherController@addPage');// 老师列表
+        Route::post('/addTeacher', 'TeacherController@addTeacher');// 老师添加
+        Route::put('/editTeacher/{teacher}', 'TeacherController@editTeacher');// 老师编辑
+        Route::put('/infoTeacher/{teacher}', 'TeacherController@infoTeacher');// 老师详情
+        Route::get('/deleteTeacher/{teacher}', 'TeacherController@deleteTeacher');// 老师删除
     });
 });
 
