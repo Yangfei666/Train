@@ -10,8 +10,8 @@
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span style="display: inline-block"><i class="icon-table"></i> 教练列表</span>
-                    <a href="/admin/addPage" class="btn" style="float: right;">
+                    <span style="display: inline-block"><i class="icon-table"></i> 环境展示列表</span>
+                    <a href="/admin/addEnvironment" class="btn" style="float: right;">
                         <i class="icol-accept"></i> 添加
                     </a>
                 </div>
@@ -19,23 +19,20 @@
                     <table class="mws-table">
                         <thead>
                         <tr>
-                            <th>照片</th>
-                            <th>姓名</th>
-                            <th>级别</th>
+                            <th>标题(会馆名称)</th>
+                            <th>展示类型</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($teachers as $teacher)
+                        @foreach($environments as $environment)
                             <tr>
-                                <td><img src="{{$teacher->img}}" style="width:100px"></td>
-                                <td>{{$teacher->name}}</td>
-                                <td>{{$teacher->level}}</td>
+                                <td>{{$environment->title}}</td>
+                                <td>{{$environment->type}}</td>
                                 <td class="checkbox-column">
                                 <span class="btn-group">
-                                    <a href="/admin/infoTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-search"></i></a>
-                                    {{--<a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>--}}
-                                    <a href="/admin/deleteTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
+                                    <a href="/admin/environmentImg/{{$environment->id}}" class="btn btn-small" title="图片编辑"><i class="icon-pencil"></i></a>
+                                    <a href="/admin/deleteEnvironment/{{$environment->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
                                 </span>
                                 </td>
                             </tr>
@@ -44,7 +41,6 @@
                     </table>
                 </div>
                 <div class="mws-panel-toolbar">
-                    {{ $teachers->links() }}
                 </div>
             </div>
         </div>

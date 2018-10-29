@@ -34,6 +34,12 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
         Route::match(['put', 'post'], '/addQuestionAndAnswer', 'SchoolController@addQuestionAndAnswer');// 相关问答添加/编辑
         Route::get('/deleteQuestionAndAnswer/{question}', 'SchoolController@deleteQuestionAndAnswer');// 相关问答删除
         Route::get('/environment', 'SchoolController@environment');// 学校环境
+        Route::get('/addEnvironment', 'SchoolController@addEnvironmentPage');// 学校环境添加页面
+        Route::post('/addEnvironment', 'SchoolController@addEnvironment');// 学校环境添加
+        Route::get('/deleteEnvironment/{environment}', 'SchoolController@deleteEnvironment');// 环境删除
+        Route::get('/environmentImg/{environment}', 'SchoolController@environmentImg');// 环境图片列表
+        Route::post('/addEnvironmentImg', 'SchoolController@addEnvironmentImg');// 学校环境添加图片
+        Route::get('/deleteEnvironmentImg/{environmentImg}', 'SchoolController@deleteEnvironmentImg');// 环境图片删除
         /* 老师模块 */
         Route::get('/teacherList', 'TeacherController@teacherList');// 老师列表
         Route::get('/addPage', 'TeacherController@addPage');// 老师添加页面
