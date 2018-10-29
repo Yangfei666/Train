@@ -18,7 +18,8 @@ Route::redirect('/', '/home', 301);
 // });
 /* 前台模块 */
 Route::namespace('Home')->group(function () {
-	Route::get('/home', 'HomeController@index');
+	Route::get('/home', 'HomeController@index')->name('home');
+	Route::get('/index', 'HomeController@index');
 	/*学校模块*/
 	Route::get('/schoolIntroduce', 'SchoolController@index');// 学校介绍
 	Route::get('/schoolNews', 'SchoolController@schoolNews');// 学校新闻

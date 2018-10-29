@@ -34,7 +34,7 @@
                                 <td class="checkbox-column">
                                 <span class="btn-group">
                                     <a href="/admin/infoTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-search"></i></a>
-                                    <a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>
+                                    {{--<a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>--}}
                                     <a href="/admin/deleteTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
                                 </span>
                                 </td>

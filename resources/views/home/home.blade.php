@@ -326,7 +326,7 @@
             @include('layout.teacher',
                         [
                             'num' => 6,
-                            'teacher' => [1,2,3,4,5,6,7,8]
+                            'teacher' => $teacher
                         ])
             <div class="fh5co-parallax" style="background-image: url(homeStatic/images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
