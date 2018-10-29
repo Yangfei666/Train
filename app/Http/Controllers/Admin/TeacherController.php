@@ -25,37 +25,12 @@ class TeacherController extends Controller
     public function addTeacher(TeacherValidate $teacher)
     {
         $params = $teacher->only(['name','level','summary','content']);
-        $params['img'] = $this->upload($teacher->file('img'));
+        $params['img'] = $this->upload($teacher->file('img'), 'teacherImg/');
         $result = Teacher::create($params);
         if (!$result) {
             return back()->withErrors(array('message' => '添加失败'));
         }
         return redirect('/admin/teacherList');
-    }
-
-    /**
-     * 文件上传
-     * @param $file
-     * @return string
-     */
-    private function upload($file)
-    {
-        // 获取上传文件名称
-        $originalName = $file->getClientOriginalName();
-        // 获取上传文件后缀
-        $ext = $file->getClientOriginalExtension();
-        // 获取上传文件路径
-        $realPath = $file->getRealPath();
-        // 获取上传文件的Mime类型
-        // $type = $image->getClientMimeType();
-
-        $newFileName = 'teacherImg/'. date('Ymd') . '/' . md5(microtime()). '.' . $ext;
-
-        if (Storage::disk('upload')->put($newFileName, file_get_contents($realPath))) {
-            return $newFileName;
-        }
-
-        return null;
     }
 
     // 详情

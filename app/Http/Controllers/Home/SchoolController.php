@@ -13,7 +13,7 @@ class SchoolController extends Controller
     public function index ()
     {
         $schoolInfo = School::first();
-        return view('home/schoolIntroduce', compact('schoolInfo'));
+        return view('home/schoolIntroduce', compact('schoolInfo', 'teacher'));
     }
     //新闻列表
     public function schoolNews ()
