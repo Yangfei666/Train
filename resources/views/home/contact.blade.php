@@ -16,9 +16,9 @@
                     </div>
                     <div class="col-md-8 animate-box">
                         <h3 class="section-title">联系我们</h3>
-                        <p>我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介我是简介</p>
+                        <p>我们所设课程内容经典丰富，设有专业的初、中、高级认证班，瑜伽私人教练认证班、瑜伽会所店长认证班、资深瑜伽导师班及艾扬格、阴瑜伽、流瑜伽、阿斯汤伽等特色课程。所有课程均可由学员根据自身爱好和需要自主选择，全面满足了学员多层次的职业发展要求。</p>
                         <ul class="contact-info">
-                            <li><i class="icon-location-pin"></i>我是地址我是地址我是地址我是地址我是地址我是地址</li>
+                            <li><i class="icon-location-pin"></i>上海市长宁区愚园路760号愚园1890三楼</li>
                             <li><i class="icon-phone2"></i>400888999</li>
                             <li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
                             <li><i class="icon-globe2"></i><a href="http://www.yujiacun.net">www.yujiacun.net</a></li>

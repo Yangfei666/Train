@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4 animate-box">
                     <h3 class="section-title">关于我们</h3>
-                    <p>副科级三打发斯蒂芬八十多分不是假的, 喝奶粉那份冬奥会翻山倒海,阿萨德发难舍难分大撒旦法你</p>
+                    <p>中国瑜伽界高度认可的瑜伽教练执教资质，认证资格已经获得全球96个国家和地区认可,换而言之，也就是说只要获得了证书就可拥有全球执教的资格</p>
                 </div>
 
                 <div class="col-md-3 animate-box"></div>

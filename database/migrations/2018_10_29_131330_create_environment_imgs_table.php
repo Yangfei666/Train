@@ -16,7 +16,7 @@ class CreateEnvironmentImgsTable extends Migration
         Schema::create('environment_imgs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('img', 100)->default();
-            $table->integer('senvironment_id');
+            $table->integer('environment_id');
             $table->timestamps();
         });
     }
