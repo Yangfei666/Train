@@ -3,22 +3,21 @@
 @section('main')
     @include('layout.top',
             [
-                'h1' => 'XXX老师',
-                'p' => '简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介',
-                'img' => 'homeStatic/images/trainer-2.jpg'
+                'h1' => $teacher->name.'老师',
+                'p' => $teacher->summary,
+                'img' => '/homeStatic/images/home-image-4.jpg'
             ])
-    @include('layout.content',
-                [
-                    'content' => '<div class="col-md-12 col-md-offset-0">
-                                    <img class="img-responsive animate-box" src="homeStatic/images/home-image-3.jpg" alt="About">
-                                  </div>
-                                  <div class="col-md-12 col-md-offset-0 animate-box">
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                    <p>澳洲亚太瑜伽联盟世界瑜伽教育理论的瑜伽培训----澳洲亚太瑜伽联盟，目前受国内各大瑜伽会所邀请，来中国校区，这是国内首家澳洲亚太瑜伽教练培训。澳洲亚太瑜伽联盟采用系统封闭式教学。使学员全面深入地接受瑜伽这门博大精深的文化体系。</p>
-                                  </div>'
-                ])
+    <div id="fh5co-team-section">
+        <div class="container" style="background-image: url({{$teacher -> img}});min-height: 450px;position: relative">
+            <div class="row about"
+                 style="color: #fff;padding: 0% 20%;
+                 background-color: rgba(0, 0, 0, 0.4);
+                 position:absolute;
+                 bottom:0px">
+                <center style="margin-top: 10px">
+                    {!! $teacher->content !!}
+                </center>
+            </div>
+        </div>
+    </div>
 @endsection

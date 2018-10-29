@@ -16,8 +16,8 @@ class TeacherController extends Controller
     }
 
     //老师详情
-    public function teacherDetail()
+    public function teacherDetail(Teacher $teacher)
     {
-        return view('home.teacherDetail');
+        return view('home.teacherDetail', compact('teacher'));
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Home;
 
+use App\Models\Environment;
 use App\Models\Question;
 use App\Models\School;
 use Illuminate\Http\Request;
@@ -29,6 +30,7 @@ class SchoolController extends Controller
     // 环境
     public function environment ()
     {
-        return view('home/environment');
+        $environments = Environment::with('EnvironmentImg')->orderBy('type', 'desc')->get();
+        return view('home/environment', compact('environments'));
     }
 }

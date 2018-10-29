@@ -12,4 +12,10 @@ class Environment extends Model
         $arr = [1 => '单图显示', 2 => '双图显示', 3 => '三图显示'];
         return $arr[$value];
     }
+
+    public function EnvironmentImg()
+    {
+        return $this->hasMany('\App\Models\EnvironmentImg');
+    }
+
 }

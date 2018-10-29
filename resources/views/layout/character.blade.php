@@ -10,9 +10,9 @@
                         <h3>{{$itme -> name}}</h3>
                         <span>{{$itme -> level}}</span>
                         <p>{{$itme -> summary}}</p>
-                        {{--<p class="fh5co-social-icons">--}}
-                            {{--<a href= {{$url}}>详情</a>--}}
-                        {{--</p>--}}
+                        <p class="fh5co-social-icons">
+                            <a href= "/teacherDetail/{{$itme->id}}">详情</a>
+                        </p>
                     </div>
                 </div>
             </div>
