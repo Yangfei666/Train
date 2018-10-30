@@ -10,7 +10,7 @@
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span style="display: inline-block"><i class="icon-table"></i> 环境展示列表</span>
+                    <span style="display: inline-block"><i class="icon-table"></i> 合作机构列表</span>
                     <a href="/admin/addEnvironment" class="btn" style="float: right;">
                         <i class="icol-accept"></i> 添加
                     </a>

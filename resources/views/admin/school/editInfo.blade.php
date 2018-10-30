@@ -51,7 +51,7 @@
                                 <label class="mws-form-label">内容<span class="required">*</span></label>
                                 <div class="mws-form-item">
                                     <textarea id="cleditor" class="large" name="content">
-                                         {{--{{$school->content}}--}}
+                                         {{$school->content}}
                                     </textarea>
                                 </div>
                             </div>

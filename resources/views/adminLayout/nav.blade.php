@@ -6,7 +6,7 @@
             <li><a href="/admin/schoolIntroduce"><i class="icon-list"></i>学校介绍管理</a></li>
             <li><a href="/admin/environment"><i class="icon-pictures"></i>合作机构管理</a></li>
             <li><a href="/admin/teacherList"><i class="icon-cogs"></i> 导师管理</a></li>
-            <li><a href="/admin/teacherList"><i class="icon-calendar"></i> 课程管理</a></li>
+            <li><a href="/admin/courseList"><i class="icon-calendar"></i> 课程管理</a></li>
             {{--<li>--}}
             {{--<a href="#"><i class="icon-list"></i> 学校信息管理</a>--}}
             {{--<ul>--}}
