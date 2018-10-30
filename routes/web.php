@@ -25,10 +25,10 @@ Route::namespace('Home')->group(function () {
 //	Route::get('/questionAndAnswer', 'SchoolController@questionAndAnswer');// 相关问答
 	Route::get('/environment', 'SchoolController@environment');// 学校环境(合作机构)
 	/*课程模块*/
-	Route::get('/offerCourse', 'CurriculumController@offerCourse');//开班信息
-	Route::get('/courseDetail', 'CurriculumController@courseDetail');//开班详情
-	Route::get('/specialCourse', 'CurriculumController@specialCourse');//特色课程
-	Route::get('/curriculumDetail', 'CurriculumController@curriculumDetail');//课程详情
+	Route::get('/offerCourse', 'CurriculumController@offerCourse');//课程
+	Route::get('/courseDetail/{course}', 'CurriculumController@courseDetail');//详情
+//	Route::get('/specialCourse', 'CurriculumController@specialCourse');//特色课程
+//	Route::get('/curriculumDetail', 'CurriculumController@curriculumDetail');//课程详情
 	/*学员与就业*/
 //	Route::get('/Student', 'StudentController@index');//学员展示
 //	Route::get('/StudentDetail', 'StudentController@StudentDetail');//学员详情

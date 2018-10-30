@@ -50,6 +50,15 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
         Route::put('/editTeacher/{teacher}', 'TeacherController@editTeacher');// 老师编辑
         Route::put('/infoTeacher/{teacher}', 'TeacherController@infoTeacher');// 老师详情
         Route::get('/deleteTeacher/{teacher}', 'TeacherController@deleteTeacher');// 老师删除
+        /*课程*/
+        Route::get('/courseList', 'CourseController@courseList');// 课程列表
+        Route::get('/deleteCourse/{course}', 'CourseController@deleteCourse');// 课程删除
+        Route::get('/infoCourse/{course}', 'CourseController@infoCourse');// 课程详情
+        Route::get('/addCoursePage', 'CourseController@addCoursePage');// 课程添加页面
+        Route::post('/addCourse', 'CourseController@addCourse');// 课程添加
+        Route::get('/editCoursePage', 'CourseController@editCoursePage');// 课程添加页面
+        Route::post('/editCourse', 'CourseController@editCourse');// 课程添加
+
     });
 });
 

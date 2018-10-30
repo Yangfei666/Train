@@ -2,29 +2,22 @@
 
 namespace App\Http\Controllers\Home;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class CurriculumController extends Controller
 {
-    // 开班
+    // 课程
     public function offerCourse()
     {
-        return view('home.offerCourse');
+        $courses = Course::get();
+        return view('home.offerCourse',compact('courses'));
     }
-    // 开班详情
-    public function courseDetail()
-    {
-        return view('home.courseDetail');
-    }
-    // 特色课程
-    public function specialCourse()
-    {
-        return view('home.specialCourse');
-    }
+
     // 特色详情
-    public function curriculumDetail()
+    public function courseDetail(Course $course)
     {
-        return view('home.curriculumDetail');
+        return view('home.courseDetail', compact('course'));
     }
 }
