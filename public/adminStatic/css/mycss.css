@@ -11,6 +11,7 @@
     padding-left: 0 !important;
     margin: 20px 0 !important;
     border-radius: 4px !important;
+    float: right;
 }
 .pagination>li {
     display: inline !important;

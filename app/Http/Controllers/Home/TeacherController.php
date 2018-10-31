@@ -11,7 +11,7 @@ class TeacherController extends Controller
     //老师列表
     public function teacher()
     {
-        $teacher = Teacher::orderBy('level')->get();
+        $teacher = Teacher::orderBy('sort')->get();
         return view('home.teacher', compact('teacher'));
     }
 

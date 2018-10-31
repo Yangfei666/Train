@@ -2,6 +2,9 @@
 
 @section('link')
     @parent
+    <style>
+        td {text-align:center}
+    </style>
 @endsection
 
 @section('main')
@@ -13,6 +16,9 @@
                     <span style="display: inline-block"><i class="icon-table"></i> 教练列表</span>
                     <a href="/admin/addPage" class="btn" style="float: right;">
                         <i class="icol-accept"></i> 添加
+                    </a>
+                    <a href="/admin/teacherSort" class="btn" style="float: right;">
+                        <i class="icol-arrow-refresh"></i> 统一排序
                     </a>
                 </div>
                 <div class="mws-panel-body no-padding">
@@ -33,9 +39,22 @@
                                 <td>{{$teacher->level}}</td>
                                 <td class="checkbox-column">
                                 <span class="btn-group">
-                                    <a href="/admin/infoTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-search"></i></a>
-                                    {{--<a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>--}}
-                                    <a href="/admin/deleteTeacher/{{$teacher->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
+                                    <a href="/admin/infoTeacher/{{$teacher->id}}" class="btn btn-small" title="老师详情">
+                                        <i class="icon-search"></i>
+                                    </a>
+                                    <a href="/admin/editPage/{{$teacher->id}}" class="btn btn-small" title="编辑资料">
+                                        <i class="icon-pencil"></i>
+                                    </a>
+                                    <a href="/admin/imgChange/teacher/{{$teacher->id}}" class="btn btn-small" title="更换图片">
+                                        <i class="icon-pictures"></i>
+                                    </a>
+                                    <a href="/admin/deleteTeacher/{{$teacher->id}}"
+                                       class="btn btn-small"
+                                       title="删除老师"
+                                       onclick="return confirm('确定要删除吗?')"
+                                    >
+                                        <i class="icon-trash"></i>
+                                    </a>
                                 </span>
                                 </td>
                             </tr>
@@ -54,29 +73,4 @@
 
 @section('link2')
     @parent
-
-    <!-- JavaScript Plugins -->
-    {{--<script src="/adminStatic/js/libs/jquery-1.8.3.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.mousewheel.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.placeholder.min.js"></script>--}}
-    {{--<script src="/adminStatic/custom-plugins/fileinput.js"></script>--}}
-
-    {{--<!-- jQuery-UI Dependent Scripts -->--}}
-    {{--<script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>--}}
-
-    {{--<!-- Plugin Scripts -->--}}
-    {{--<script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>--}}
-    {{--<script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>--}}
-
-    {{--<!-- Core Script -->--}}
-    {{--<script src="/adminStatic/bootstrap/js/bootstrap.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/core/mws.js"></script>--}}
-
-    {{--<!-- Themer Script (Remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/core/themer.js"></script>--}}
-
-    {{--<!-- Demo Scripts (remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/demo/demo.table.js"></script>--}}
 @endsection

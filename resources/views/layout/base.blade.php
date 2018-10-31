@@ -13,6 +13,7 @@
     <meta name="author" content="Help yourself" />
     <meta name="keywords" content="瑜伽教练,瑜伽学校，瑜伽培训,瑜伽教练培训,瑜伽老师培训,瑜伽证书,瑜伽教练资格证,瑜伽教练证怎么考,瑜伽教练培训学校,上海瑜伽教练培训,上海瑜伽学校,中国瑜伽联盟" />
 
+    <link rel="icon" sizes="any" mask href="/homeStatic/images/loc.png">
 
 
 

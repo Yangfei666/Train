@@ -6,55 +6,33 @@
 @endsection
 
 @section('main')
-    <!-- Main Container Start -->
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
                 <div class="mws-panel-header">
-                    <span><i class="icon-pencil-2"></i> 添加老师</span>
+                    <span><i class="icon-pencil-2"></i> 编辑课程</span>
                 </div>
                 <div class="mws-panel-body no-padding">
-                    <form class="mws-form" action="/admin/addTeacher" method="post" enctype="multipart/form-data">
+                    <form class="mws-form" action="/admin/editCourse/{{$course->id}}" method="post" enctype="multipart/form-data">
                         @include('adminLayout.errors')
                         <div class="mws-form-row">
-                            <label class="mws-form-label">姓名<span class="required">*</span></label>
+                            <label class="mws-form-label">课程名称<span class="required">*</span></label>
                             <div class="mws-form-item">
-                                <input type="text" class="large" name="name">
+                                <input type="text" class="large" name="title" value="{{$course->title}}">
                                 {{csrf_field()}}
-                            </div>
-                        </div>
-                        <div class="mws-form-row">
-                            <label class="mws-form-label">照片<span class="required">*</span></label>
-                            <div class="mws-form-item">
-                                <input type="file" name="img">
-                            </div>
-                        </div>
-                        <div class="mws-form-row">
-                            <label class="mws-form-label">级别<span class="required">*</span></label>
-                            <div class="mws-form-item clearfix">
-                                <ul class="mws-form-list inline">
-                                    <li><input type="radio" name="level" value="高级导师"> <label>高级导师</label></li>
-                                    <li><input type="radio" name="level" value="特级导师"> <label>特级导师</label></li>
-                                    <li><input type="radio" name="level" value="特邀导师"> <label>特邀导师</label></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mws-form-row">
-                            <label class="mws-form-label">排序<span class="required">*</span></label>
-                            <div class="mws-form-item">
-                                <input type="text" class="large" name="sort">
+                                {{method_field('put')}}
                             </div>
                         </div>
                         <div class="mws-form-row">
                             <label class="mws-form-label">概述<span class="required">*</span></label>
                             <div class="mws-form-item">
-                                <input type="text" class="large" name="summary">
+                                <input type="text" class="large" name="summary" value="{{$course->summary}}">
                             </div>
                         </div>
                         <div class="mws-form-row">
                             <label class="mws-form-label">详情介绍<span class="required">*</span></label>
                             <div class="mws-form-item">
-                                <input type="hidden" class="large" name="content" id="content">
+                                <input type="hidden" id="content" name="content" value="{{$course->content}}">
                                 <script type="text/plain" id="myEditor"></script>
                             </div>
                         </div>
@@ -66,8 +44,6 @@
             </div>
         </div>
     </div>
-    <!-- Main Container End -->
-
 @endsection
 
 @section('link2')
@@ -77,8 +53,9 @@
     <script type="text/javascript" charset="utf-8" src="/UEditor/umeditor.min.js"></script>
     <script type="text/javascript" src="/UEditor/lang/zh-cn/zh-cn.js"></script>
     <script type="text/javascript">
-        $('#myEditor').css("width", '100%').css('height', '400px');
+        $('#myEditor').css("width", '100%').css('height', '240px');
         var um = UM.getEditor('myEditor');
+        um.setContent($('#content').val());
         $('#btn-submit').click(function () {
             $('#content').val(um.getContent());
         });
