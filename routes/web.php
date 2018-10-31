@@ -43,6 +43,7 @@ Route::namespace('Home')->group(function () {
 	Route::get('/teacherDetail/{teacher}', 'TeacherController@teacherDetail');// 老师详情
 	/*联系报名*/
 	Route::get('/contact', 'ContactController@contact');// 联系报名页面
+    Route::get('/notices', 'NoticeController@store');//报名
 });
 
 

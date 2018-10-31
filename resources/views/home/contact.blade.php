@@ -28,33 +28,47 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="col-md-6 animate-box">
-                        <h3 class="section-title">留言报名</h3>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="姓名" autofocus>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="电话">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="留言内容:比如其他基本信息,意向课程,其他疑问等等"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="submit" value="确定" class="btn btn-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    {{--<div class="col-md-6 animate-box">--}}
+                        {{--<h3 class="section-title">留言报名</h3>--}}
+                        {{--<form action="/notices" method="post">--}}
+                            {{--<div class="row">--}}
+                                {{--<div class="col-md-6">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<input type="text" class="form-control" placeholder="姓名" autofocus name="name">--}}
+                                        {{--{{csrf_field()}}--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-md-6">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<input type="text" class="form-control" placeholder="电话" name="tel">--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-md-12">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<textarea class="form-control" name="content" cols="30" rows="7" placeholder="留言内容:比如其他基本信息,意向课程,其他疑问等等"></textarea>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-md-6">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--<input type="submit" value="确定" class="btn btn-primary">--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--@if (count($errors) > 0)--}}
+                                    {{--<div class=" col-md-6" style=" color: #7e0606;">--}}
+                                        {{--错误提示!--}}
+                                        {{--<ul>--}}
+                                        {{--@foreach ($errors->all() as $error)--}}
+                                                {{--<li>{{ $error }}</li>--}}
+                                            {{--@endforeach--}}
+                                        {{--</ul>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
+                    {{--</div>--}}
                 </div>
             </form>
         </div>
     </div>
 @endsection
+

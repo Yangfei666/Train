@@ -66,6 +66,8 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
         Route::get('/imgChange/course/{course}', 'CourseController@imgChangePage');// 课程更改图片页面
         Route::put('/imgChange/course/{course}', 'CourseController@imgChange');// 课程更改图片
 
+        /*报名通知*/
+        Route::resource('notices', 'NoticeController');
     });
 });
 
