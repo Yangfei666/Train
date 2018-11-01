@@ -70,7 +70,3 @@
     </div>
     <!-- Main Container End -->
 @endsection
-
-@section('link2')
-    @parent
-@endsection

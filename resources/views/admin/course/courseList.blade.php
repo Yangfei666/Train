@@ -64,6 +64,3 @@
     </div>
 @endsection
 
-@section('link2')
-    @parent
-@endsection

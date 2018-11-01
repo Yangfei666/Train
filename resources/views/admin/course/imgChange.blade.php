@@ -1,8 +1,5 @@
 @extends('adminLayout.base')
 
-@section('link')
-    @parent
-@endsection
 
 @section('main')
     <div id="mws-container" class="clearfix">
@@ -40,6 +37,3 @@
     </div>
 @endsection
 
-@section('link2')
-    @parent
-@endsection
