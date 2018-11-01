@@ -1,10 +1,5 @@
 @extends('adminLayout.base')
 
-@section('link')
-    @parent
-    <link href="/UEditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-@endsection
-
 @section('main')
     <!-- Main Container Start -->
     <div id="mws-container" class="clearfix">
@@ -76,16 +71,19 @@
 
 @section('link2')
     @parent
-    <script type="text/javascript" src="/UEditor/third-party/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/UEditor/umeditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/UEditor/umeditor.min.js"></script>
-    <script type="text/javascript" src="/UEditor/lang/zh-cn/zh-cn.js"></script>
+
+    <script type="text/javascript" src="{{asset('editor/ueditor.config.js')}}"></script>
+    <script type="text/javascript" charset="utf-8" src="/editor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/editor/lang/zh-cn/zh-cn.js"></script>
+
+
     <script type="text/javascript">
-        $('#myEditor').css("width", '100%').css('height', '240px');
-        var um = UM.getEditor('myEditor');
-        um.setContent($('#content').val());
-        $('#btn-submit').click(function () {
-            $('#content').val(um.getContent());
+        var ue = UE.getEditor('myEditor');
+        ue.ready(function(){
+            ue.setContent($('#content').val());
+            $('#btn-submit').click(function () {
+                $('#content').val(ue.getContent());
+            });
         });
     </script>
 @endsection

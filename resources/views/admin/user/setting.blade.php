@@ -1,7 +1,5 @@
 @extends('adminLayout.base')
-@section('link')
-    @parent
-@endsection
+
 @section('main')
     <!-- Main Container Start -->
     <!-- Main Container End -->
@@ -50,8 +48,4 @@
             </div>
         </div>
     </div>
-@endsection
-
-@section('link2')
-    @parent
 @endsection

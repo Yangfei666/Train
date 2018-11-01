@@ -1,9 +1,5 @@
 @extends('adminLayout.base')
 
-@section('link')
-    @parent
-@endsection
-
 @section('main')
     <!-- Main Container Start -->
     <div id="mws-container" class="clearfix">
@@ -43,33 +39,4 @@
         </div>
     </div>
     <!-- Main Container End -->
-@endsection
-
-@section('link2')
-    @parent
-
-    <!-- JavaScript Plugins -->
-    {{--<script src="/adminStatic/js/libs/jquery-1.8.3.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.mousewheel.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.placeholder.min.js"></script>--}}
-    {{--<script src="/adminStatic/custom-plugins/fileinput.js"></script>--}}
-
-    {{--<!-- jQuery-UI Dependent Scripts -->--}}
-    {{--<script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>--}}
-
-    {{--<!-- Plugin Scripts -->--}}
-    {{--<script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>--}}
-    {{--<script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>--}}
-
-    {{--<!-- Core Script -->--}}
-    {{--<script src="/adminStatic/bootstrap/js/bootstrap.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/core/mws.js"></script>--}}
-
-    {{--<!-- Themer Script (Remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/core/themer.js"></script>--}}
-
-    {{--<!-- Demo Scripts (remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/demo/demo.table.js"></script>--}}
 @endsection
