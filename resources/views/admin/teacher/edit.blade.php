@@ -72,9 +72,9 @@
 @section('link2')
     @parent
 
-    <script type="text/javascript" src="{{asset('editor/ueditor.config.js')}}"></script>
-    <script type="text/javascript" charset="utf-8" src="/editor/ueditor.all.min.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="/editor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="{{asset('/ueditor/ueditor.config.js')}}"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
 
 
     <script type="text/javascript">
