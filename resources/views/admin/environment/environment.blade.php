@@ -2,10 +2,12 @@
 
 @section('link')
     @parent
+    <style>
+        td {text-align:center}
+    </style>
 @endsection
 
 @section('main')
-    <!-- Main Container Start -->
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
@@ -31,8 +33,15 @@
                                 <td>{{$environment->type}}</td>
                                 <td class="checkbox-column">
                                 <span class="btn-group">
-                                    <a href="/admin/environmentImg/{{$environment->id}}" class="btn btn-small" title="图片编辑"><i class="icon-pencil"></i></a>
-                                    <a href="/admin/deleteEnvironment/{{$environment->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
+                                    <a href="/admin/environmentImg/{{$environment->id}}" class="btn btn-small"
+                                       title="图片编辑"><i class="icon-pictures"></i></a>
+                                    <a href="/admin/deleteEnvironment/{{$environment->id}}"
+                                       class="btn btn-small"
+                                       title="删除"
+                                       onclick="return confirm('确定要删除吗?')"
+                                    >
+                                        <i class="icon-trash"></i>
+                                    </a>
                                 </span>
                                 </td>
                             </tr>
@@ -45,34 +54,8 @@
             </div>
         </div>
     </div>
-    <!-- Main Container End -->
 @endsection
 
 @section('link2')
     @parent
-
-    <!-- JavaScript Plugins -->
-    {{--<script src="/adminStatic/js/libs/jquery-1.8.3.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.mousewheel.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.placeholder.min.js"></script>--}}
-    {{--<script src="/adminStatic/custom-plugins/fileinput.js"></script>--}}
-
-    {{--<!-- jQuery-UI Dependent Scripts -->--}}
-    {{--<script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>--}}
-
-    {{--<!-- Plugin Scripts -->--}}
-    {{--<script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>--}}
-    {{--<script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>--}}
-
-    {{--<!-- Core Script -->--}}
-    {{--<script src="/adminStatic/bootstrap/js/bootstrap.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/core/mws.js"></script>--}}
-
-    {{--<!-- Themer Script (Remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/core/themer.js"></script>--}}
-
-    {{--<!-- Demo Scripts (remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/demo/demo.table.js"></script>--}}
 @endsection

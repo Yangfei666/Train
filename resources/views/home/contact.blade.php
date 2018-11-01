@@ -6,7 +6,7 @@
                     'h1' => '联系我们',
                     'p' => '澳洲亚太瑜伽联盟----瑜伽行业的<b>领跑者</b>。<br/>
                             为瑜伽行业提供了一个培训认证的标准示范。',
-                    'img' => 'homeStatic/images/home-image-5.jpg'
+                    'img' => 'homeStatic/images/lxwm.png'
                 ])
     <div id="fh5co-contact">
         <div class="container">
@@ -16,12 +16,16 @@
                     </div>
                     <div class="col-md-8 animate-box">
                         <h3 class="section-title">联系我们</h3>
-                        <p>我们所设课程内容经典丰富，设有专业的初、中、高级认证班，瑜伽私人教练认证班、瑜伽会所店长认证班、资深瑜伽导师班及艾扬格、阴瑜伽、流瑜伽、阿斯汤伽等特色课程。所有课程均可由学员根据自身爱好和需要自主选择，全面满足了学员多层次的职业发展要求。</p>
+                        <p>我我们所设课程内容经典丰富，设有专业的200小时RYT，瑜伽私人教练认证班、瑜伽会所店长认证班、资深瑜伽导师班及艾扬格、阴瑜伽、流瑜伽、阿斯汤伽等特色课程。所有课程均可由学员根据自身爱好和需要自主选择，全面满足了学员多层次的职业发展需求。</p>
                         <ul class="contact-info">
-                            <li><i class="icon-location-pin"></i>上海市长宁区愚园路760号愚园1890三楼</li>
-                            <li><i class="icon-phone2"></i>400888999</li>
-                            <li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
-                            <li><i class="icon-globe2"></i><a href="http://www.yujiacun.net">www.yujiacun.net</a></li>
+                            <li><i class="icon-location-pin"></i>成都市锦江区泰合·国际财富中心 7栋302号</li>
+                            <li><i class="icon-phone2"></i>15882124911</li>
+                            <li><i class="icon-mail"></i><a href="#">2668482304@qq.com</a></li>
+                            <li>
+                                <i class="icon-globe2"></i>
+                                <a href="http://www.aomengyujia.com">www.aomengyujia.com</a> /
+                                <a href="http://www.yujiacun.net">www.yujiacun.net</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- <div class="col-md-6 animate-box">

@@ -5,7 +5,7 @@
             [
                 'h1' => '课程介绍',
                 'p' => '专业的初、中、高级认证班，瑜伽私人教练认证班、瑜伽会所店长认证班、资深瑜伽导师班及艾扬格、阴瑜伽、流瑜伽、阿斯汤伽等特色课程',
-                'img' => 'homeStatic/images/home-image-5.jpg'
+                'img' => 'homeStatic/images/kcjs.png'
             ])
     @foreach($courses as $course)
     <br/>

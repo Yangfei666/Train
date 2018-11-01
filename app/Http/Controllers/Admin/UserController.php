@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\Login;
 use App\Http\Requests\ResetPwd;
+use App\Models\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -19,10 +20,10 @@ class UserController extends Controller
 
     protected $redirectTo = '/admin';
 
-    public function __construct()
-    {
-        $this->middleware('guest.admin', ['except' => 'logout']);
-    }
+//    public function __construct()
+//    {
+//        $this->middleware('guest.admin', ['except' => 'logout']);
+//    }
 
     /**
      * 使用 admin guard
@@ -81,11 +82,16 @@ class UserController extends Controller
     }
 
     //修改密码
-    public function settingStore(ResetPwd $resetPwd)
+    public function settingStore(ResetPwd $resetPwd, Admin $admin)
     {
         $oldPassword = $resetPwd->input('oldPassword');
         $password = $resetPwd->password;
-        dd($password, $oldPassword);
+        if (Auth::guard('admin')->attempt(['name' => $admin->name, 'password' => $oldPassword])) {
+            $admin->password = bcrypt($password);
+            $admin->save();
+            $this->logout();
+        }
+        return redirect()->back()->withErrors('原密码错误');
     }
 
 }

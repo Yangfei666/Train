@@ -12,20 +12,20 @@ class CooperationController extends Controller
 {
 
     // 环境页面
-    public function environment ()
+    public function environment()
     {
         $environments = Environment::get();
         return view('admin/environment/environment', compact('environments'));
     }
 
     // 环境添加页面
-    public function addEnvironmentPage ()
+    public function addEnvironmentPage()
     {
         return view('admin/environment/addEnvironment');
     }
 
     // 环境添加
-    public function addEnvironment (\App\Http\Requests\Environment $environment)
+    public function addEnvironment(\App\Http\Requests\Environment $environment)
     {
         $params = $environment->only(['title', 'type']);
         $result = Environment::create($params);
@@ -36,10 +36,10 @@ class CooperationController extends Controller
     }
 
     // 环境删除
-    public function deleteEnvironment (Environment $environment)
+    public function deleteEnvironment(Environment $environment)
     {
         DB::beginTransaction();
-        try{
+        try {
             $environment->delete();
             $eid = $environment->id;
             EnvironmentImg::where('environment_id', $eid)->delete();
@@ -51,7 +51,7 @@ class CooperationController extends Controller
     }
 
     // 环境图片
-    public function environmentImg (Environment $environment)
+    public function environmentImg(Environment $environment)
     {
         $imgs = EnvironmentImg::where('environment_id', $environment->id)->get();
         return view('admin/environment/environmentImg', compact('imgs', 'environment'));

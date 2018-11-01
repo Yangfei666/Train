@@ -21,6 +21,7 @@ class CreateTeachersTable extends Migration
             $table->string('img',100)->default('');
             $table->string('level',12)->default('');
             $table->string('name',18)->default('');
+            $table->tinyInteger('sort')->default(1);
         });
     }
 

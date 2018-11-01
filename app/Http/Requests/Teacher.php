@@ -28,7 +28,7 @@ class Teacher extends FormRequest
             'level' => 'required|string',
             'summary' => 'required|string|max:150|min:10',
             'content' => 'required|max:20000|min:100',
-            'img' => 'nullable|image'
+            'sort' => 'required|integer|min:1|max:9999'
         ];
     }
 }

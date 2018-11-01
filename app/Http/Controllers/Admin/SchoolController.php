@@ -12,14 +12,14 @@ use App\Models\School;
 class SchoolController extends Controller
 {
     // 介绍页面
-    public function index ()
+    public function index()
     {
         $school = School::first();
         return view('admin.school.editInfo', compact('school'));
     }
 
     // 编辑介绍
-    public function editSchoolIntroduce (SchoolInfo $request)
+    public function editSchoolIntroduce(SchoolInfo $request)
     {
         $params = $request->only(['abstract', 'content']);
         School::updateOrCreate(['id' => 1], $params);
@@ -27,15 +27,15 @@ class SchoolController extends Controller
     }
 
     //新闻列表
-    public function schoolNews ()
+    public function schoolNews()
     {
         return view('admin/schoolNews');
     }
 
     // 问答页面
-    public function questionAndAnswer ()
+    public function questionAndAnswer()
     {
-        $questions = Question::orderBy('id', 'desc')->paginate (5);
+        $questions = Question::orderBy('id', 'desc')->paginate(5);
         return view('admin/school/questionAndAnswer', compact('questions'));
     }
 
@@ -51,7 +51,7 @@ class SchoolController extends Controller
     }
 
     // 添加/编辑问答
-    public function addQuestionAndAnswer (QuestionAndAnswer $request, IdValidate $req)
+    public function addQuestionAndAnswer(QuestionAndAnswer $request, IdValidate $req)
     {
         $params = $request->only(['question', 'answer']);
         $id = $request->only(['id']);
@@ -64,7 +64,7 @@ class SchoolController extends Controller
     }
 
     //删除问答
-    public function deleteQuestionAndAnswer (Question $question)
+    public function deleteQuestionAndAnswer(Question $question)
     {
         $question->delete();
         return redirect('/admin/questionAndAnswer');

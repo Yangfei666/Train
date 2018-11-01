@@ -8,7 +8,9 @@
 
 <!-- Viewport Metatag -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    @section('link')
+    <link rel="icon" sizes="any" mask href="/homeStatic/images/loc.png">
+
+@section('link')
         <!-- Plugin Stylesheets first to ease overrides -->
         {{--<link rel="stylesheet" type="text/css" href="/adminStatic/plugins/colorpicker/colorpicker.css" media="screen">--}}
         {{--<link rel="stylesheet" type="text/css" href="/adminStatic/custom-plugins/wizard/wizard.css" media="screen">--}}

@@ -5,7 +5,7 @@
                 [
                     'h1' => '合作机构',
                     'p' => '全国各地,会馆林立',
-                    'img' => 'homeStatic/images/trainer-6.jpg'
+                    'img' => 'homeStatic/images/hzjg.png'
                 ])
     <div id="fh5co-team-section">
         <div class="container">

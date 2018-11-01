@@ -2,10 +2,14 @@
 
 @section('link')
     @parent
+    <style>
+        td {
+            text-align: center
+        }
+    </style>
 @endsection
 
 @section('main')
-    <!-- Main Container Start -->
     <div id="mws-container" class="clearfix">
         <div class="container">
             <div class="mws-panel grid_8">
@@ -28,14 +32,24 @@
                         <tbody>
                         @foreach($courses as $course)
                             <tr>
-                                <td><img src="{{$course->img}}" style="width: 100px;"></td>
+                                <td><img src="{{$course->img}}" style="width: 150px;"></td>
                                 <td>{{$course->title}}</td>
-                                <td>{{$course->summary}}</td>
+                                <td style="max-width: 500px;">{{$course->summary}}</td>
                                 <td class="checkbox-column">
                                 <span class="btn-group">
-                                    <a href="/admin/infoCourse/{{$course->id}}" class="btn btn-small"><i class="icon-search"></i></a>
-                                    <a href="/admin/editCourse/{{$course->id}}" class="btn btn-small"><i class="icon-pencil"></i></a>
-                                    <a href="/admin/deleteCourse/{{$course->id}}" class="btn btn-small"><i class="icon-trash"></i></a>
+                                    <a href="/admin/infoCourse/{{$course->id}}" class="btn btn-small"  title="课程详情">
+                                        <i class="icon-search"></i>
+                                    </a>
+                                    <a href="/admin/editCoursePage/{{$course->id}}" class="btn btn-small"  title="编辑课程">
+                                        <i class="icon-pencil"></i>
+                                    </a>
+                                    <a href="/admin/imgChange/course/{{$course->id}}" class="btn btn-small" title="更换图片">
+                                        <i class="icon-pictures"></i>
+                                    </a>
+                                    <a href="/admin/deleteCourse/{{$course->id}}" class="btn btn-small"  title="删除课程"
+                                       onclick="return confirm('确定要删除吗?')">
+                                        <i class="icon-trash"></i>
+                                    </a>
                                 </span>
                                 </td>
                             </tr>
@@ -48,34 +62,8 @@
             </div>
         </div>
     </div>
-    <!-- Main Container End -->
 @endsection
 
 @section('link2')
     @parent
-
-    <!-- JavaScript Plugins -->
-    {{--<script src="/adminStatic/js/libs/jquery-1.8.3.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.mousewheel.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/libs/jquery.placeholder.min.js"></script>--}}
-    {{--<script src="/adminStatic/custom-plugins/fileinput.js"></script>--}}
-
-    {{--<!-- jQuery-UI Dependent Scripts -->--}}
-    {{--<script src="/adminStatic/jui/js/jquery-ui-1.9.2.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/jquery-ui.custom.min.js"></script>--}}
-    {{--<script src="/adminStatic/jui/js/jquery.ui.touch-punch.js"></script>--}}
-
-    {{--<!-- Plugin Scripts -->--}}
-    {{--<script src="/adminStatic/plugins/datatables/jquery.dataTables.min.js"></script>--}}
-    {{--<script src="/adminStatic/plugins/colorpicker/colorpicker-min.js"></script>--}}
-
-    {{--<!-- Core Script -->--}}
-    {{--<script src="/adminStatic/bootstrap/js/bootstrap.min.js"></script>--}}
-    {{--<script src="/adminStatic/js/core/mws.js"></script>--}}
-
-    {{--<!-- Themer Script (Remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/core/themer.js"></script>--}}
-
-    {{--<!-- Demo Scripts (remove if not needed) -->--}}
-    {{--<script src="/adminStatic/js/demo/demo.table.js"></script>--}}
 @endsection
