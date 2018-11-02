@@ -25,8 +25,8 @@
                             'teacher' => $teacher
                         ])
 
-            <div id="fh5co-team-section">
-                <div class="container">
+<!--             <div id="fh5co-team-section">
+                <div class="container"> -->
                     @include('layout.title',
                     [
                         'h2' => '精品课程',
@@ -58,8 +58,8 @@
                             <br>
                     @endforeach
                     <a href="/offerCourse" class="btn btn-primary" style="float: right;">更多课程</a>
-                </div>
-            </div>
+<!--                 </div>
+            </div> -->
 
 
             <div id="fh5co-team-section">
