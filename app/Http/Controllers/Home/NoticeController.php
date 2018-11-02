@@ -12,7 +12,7 @@ class NoticeController extends Controller
     /**
      * 添加操作
      */
-    public function store(Request $request, NoticeValidate $notice)
+    public function add(Request $request, NoticeValidate $notice)
     {
         if (!$request->ajax()) return ['status' => false, 'msg' => '滚!!!'];
         $params = $notice->only(['name', 'tel', 'content']);

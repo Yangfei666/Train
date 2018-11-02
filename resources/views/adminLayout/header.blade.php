@@ -3,8 +3,8 @@
     <div id="mws-logo-container">
 
         <div id="mws-logo-wrap">
-            <img src="/adminStatic/images/loc.png">
-            <span style="color: #fff;font-family:Verdana;font-size: 35px;font-weight: 900;vertical-align:middle">admin</span>
+            <img src="/homeStatic/images/logo1.png">
+            <span style="color: #fff;font-family:Verdana;font-size: 30px;font-weight: 900;vertical-align:middle">admin</span>
         </div>
     </div>
 

@@ -8,7 +8,7 @@
 
 <!-- Viewport Metatag -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" sizes="any" mask href="/homeStatic/images/loc.png">
+    <link rel="icon" sizes="any" mask href="/homeStatic/images/logo_black.png">
 
 @section('link')
         <!-- Plugin Stylesheets first to ease overrides -->
