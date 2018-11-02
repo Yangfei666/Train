@@ -22,7 +22,7 @@ class HomeController extends Controller
                 $action = Route::currentRouteAction();
                 dd($route, $name, $action);*/
         // 获取数据
-        $teacher = Teacher::orderBy('level')->get();
+        $teacher = Teacher::orderBy('sort')->get();
         $environments = Environment::with('EnvironmentImg')->where('type', 3)->paginate(2);
         $courses = Course::get();
 
