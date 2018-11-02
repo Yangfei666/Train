@@ -12,13 +12,12 @@ class NoticeController extends Controller
     /**
      * 添加操作
      */
-    public function add(Request $request, NoticeValidate $notice)
+    public function add(NoticeValidate $notice)
     {
-        if (!$request->ajax()) return ['status' => false, 'msg' => '滚!!!'];
         $params = $notice->only(['name', 'tel', 'content']);
         $result = Notice::create($params);
-        if (!$result) return ['status' => false, 'msg' => '对不起,资料提交失败!!请直接电话联系我们'];
-        return ['status' => true, 'msg' => '恭喜您,报名成功!!请注意接听我的回访电话!!!'];
+        if (!$result) return back()->withErrors('对不起,网络客服正在忙,请您主动电话联系我们,谢谢!!');
+        return redirect('/contact')->with('message', '恭喜您报名成功,我们会尽快跟您联系,请注意接听我们的电话哦~~~');
     }
 
 }
