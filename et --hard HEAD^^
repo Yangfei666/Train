@@ -1,0 +1,209 @@
+[33mcommit f94729635681ef07cfb31fa8ac45ae4ffadbbbbd[m
+Merge: 986a365 15f5709
+Author: yangfei666 <1025046794@qq.com>
+Date:   Thu Nov 1 17:29:31 2018 +0800
+
+    Merge branch 'master' of https://github.com/Yangfei666/Train
+
+[33mcommit 986a3658c4e5b28da95e3f5d9f6c0866921a7880[m
+Author: yangfei666 <1025046794@qq.com>
+Date:   Thu Nov 1 17:26:31 2018 +0800
+
+    111
+
+[33mcommit 15f570982569f7b4af5b9f6bffa1c43b0b613c2b[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Nov 1 17:25:23 2018 +0800
+
+    '百度编辑器替换'
+
+[33mcommit f6dfd9f40f86b1fa623b92e877bf73f67ffc87ed[m
+Merge: 8f83c5f 68af0e2
+Author: yangfei666 <1025046794@qq.com>
+Date:   Thu Nov 1 16:51:12 2018 +0800
+
+    Merge branch 'master' of https://github.com/Yangfei666/Train
+
+[33mcommit 8f83c5f034362e0d33e3a92c937a556f9670e692[m
+Merge: 2daf2ec dd6c1c5
+Author: yangfei666 <1025046794@qq.com>
+Date:   Thu Nov 1 16:51:03 2018 +0800
+
+    123
+
+[33mcommit 68af0e21fbeac0021e18bb2a545418a53c1f27e8[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Nov 1 16:48:19 2018 +0800
+
+    '百度编辑器替换'
+
+[33mcommit d87ca5f26ef1bdfb26aea5e50b93628b07e11d6d[m
+Author: Kevin <1025046794@qq.com>
+Date:   Wed Oct 31 18:10:55 2018 +0800
+
+    '报名'
+
+[33mcommit 2daf2ec14ccf18d1c2a62c21e84f328775584de7[m
+Author: yangfei666 <1025046794@qq.com>
+Date:   Wed Oct 31 14:45:23 2018 +0800
+
+    111
+
+[33mcommit dd6c1c5f39d52491f88857aa02db3a131aa1eba4[m
+Author: Kevin <1025046794@qq.com>
+Date:   Wed Oct 31 14:41:23 2018 +0800
+
+    '基本完成'
+
+[33mcommit 45c1d6315de419a76a7e99936daae24470bd9a54[m
+Merge: dbaf692 df73c02
+Author: yangfei666 <1025046794@qq.com>
+Date:   Tue Oct 30 15:51:43 2018 +0800
+
+    Merge branch 'master' of https://github.com/Yangfei666/Train
+
+[33mcommit df73c02c1ad61d8776187ded9c694090356a6887[m
+Author: Kevin <1025046794@qq.com>
+Date:   Tue Oct 30 15:49:35 2018 +0800
+
+    '课程模块'
+
+[33mcommit dbaf6920a97cd5404330c70f96126440fba5af28[m
+Merge: dc4d9ed a7f98fd
+Author: yangfei666 <1025046794@qq.com>
+Date:   Mon Oct 29 17:23:21 2018 +0800
+
+    Merge branch 'master' of https://github.com/Yangfei666/Train
+
+[33mcommit a7f98fd30ebd72c0d16958b1417a9f635c1ad8c7[m
+Author: Kevin <1025046794@qq.com>
+Date:   Mon Oct 29 17:18:10 2018 +0800
+
+    '合作机构,导师详情'
+
+[33mcommit dc4d9ed4c52d59904b26f34490fa4f0e85f9b84f[m
+Merge: d264114 f23e3bf
+Author: yangfei666 <1025046794@qq.com>
+Date:   Mon Oct 29 14:53:59 2018 +0800
+
+    Merge branch 'master' of https://github.com/Yangfei666/Train
+
+[33mcommit d264114cc28064a11c510a5027a1f46a5626b747[m
+Author: yangfei666 <1025046794@qq.com>
+Date:   Mon Oct 29 14:53:54 2018 +0800
+
+    111
+
+[33mcommit f23e3bfb0770a3c04937520d6edf363656397b91[m
+Author: Kevin <1025046794@qq.com>
+Date:   Mon Oct 29 14:51:20 2018 +0800
+
+    '后台学校环境'
+
+[33mcommit 09eae76cb6dc7612674fba0c94284d6f459c8664[m
+Author: Kevin <1025046794@qq.com>
+Date:   Fri Oct 26 18:01:24 2018 +0800
+
+    '教练详情'
+
+[33mcommit 2362c0afcf4c10acbc661338720561c959d54a74[m
+Author: Kevin <1025046794@qq.com>
+Date:   Fri Oct 26 17:19:03 2018 +0800
+
+    '教练添加删除'
+
+[33mcommit aa3dbce86c21d93e25d3caa9dd88fe79b2d74d1d[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 25 16:36:16 2018 +0800
+
+    '后台登录跳转'
+
+[33mcommit 4ade592ab54567b3b4e3f41e736f47609a9f8904[m
+Author: Kevin <1025046794@qq.com>
+Date:   Wed Oct 24 18:03:03 2018 +0800
+
+    '登录中间件'
+
+[33mcommit b0a60cb3fd131bb85cb3f6480d24924ee3f99af8[m
+Author: Kevin <1025046794@qq.com>
+Date:   Tue Oct 23 18:08:36 2018 +0800
+
+    '后台登录'
+
+[33mcommit cb1214c999c419b2b8d9f2f4b5428c37ad3f1253[m
+Author: Kevin <1025046794@qq.com>
+Date:   Tue Oct 23 09:00:39 2018 +0800
+
+    '上次提交遗漏的'
+
+[33mcommit bff2e7375bccde5c53aabe8ab1bf58313729a3eb[m
+Author: Kevin <1025046794@qq.com>
+Date:   Mon Oct 22 18:12:14 2018 +0800
+
+    '后台提交学校信息'
+
+[33mcommit 4b3b1a1cad590225d1cbbdb31007b8351e089f19[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 13:07:42 2018 +0800
+
+    路由分组
+
+[33mcommit 49f8b72f14c76a32bcefe2ef35569f7bd19332dd[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 11:37:44 2018 +0800
+
+    稍作修改
+
+[33mcommit ae16483911ed7353eeabd854b43c448d5d711d64[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 09:59:45 2018 +0800
+
+    稍作修改
+
+[33mcommit da56e7042b3a742a5156698e75543a9cefbbb966[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 09:46:14 2018 +0800
+
+    稍作修改
+
+[33mcommit fd50d9297e0e1c1d9844403541ce5372ca617aeb[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 09:44:48 2018 +0800
+
+    稍作修改
+
+[33mcommit 88c71da63eee6e8898bc92f02578b53c84e7be6e[m
+Author: Kevin <1025046794@qq.com>
+Date:   Thu Oct 18 09:11:18 2018 +0800
+
+    默认跳转首页
+
+[33mcommit 8b9a264837ec0887379c12eed2de47a4f872bc53[m
+Author: Kevin <1025046794@qq.com>
+Date:   Wed Oct 17 15:06:48 2018 +0800
+
+    '后台模版确定'
+
+[33mcommit 2e49f28806088408a749acab0c898be66b10f609[m
+Author: Kevin <1025046794@qq.com>
+Date:   Mon Oct 15 10:38:12 2018 +0800
+
+    前台模版基本准备完毕
+
+[33mcommit 406f74e546bfc2272a54ae4a990157a31276f348[m
+Author: Kevin <1025046794@qq.com>
+Date:   Wed Oct 10 18:31:24 2018 +0800
+
+    '修改模版中'
+
+[33mcommit 04b9fd8296da9d981f16e73cef089cc3b92c4cdf[m
+Author: Kevin <1025046794@qq.com>
+Date:   Tue Oct 9 16:13:35 2018 +0800
+
+    '添加前台模版文件'
+
+[33mcommit 0b8477526172300cb46845819d9baf26e9e7b383[m
+Author: Kevin <1025046794@qq.com>
+Date:   Tue Oct 9 16:09:01 2018 +0800
+
+    '第一次提交'
