@@ -13,7 +13,8 @@
                  style="color: #fff;padding: 0% 20%;
                  background-color: rgba(0, 0, 0, 0.4);
                  position:absolute;
-                 bottom:0px">
+                 bottom:0px;
+                 width: 100%;">
                 <center style="margin-top: 10px">
                     {!! $teacher->content !!}
                 </center>

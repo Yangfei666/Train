@@ -19,7 +19,7 @@
                             <a href="/home">首页</a>
                         </li>
                         <li>
-                            <a href="/schoolIntroduce" class="fh5co-sub-ddown">学校介绍</a>
+                            <a href="/schoolIntroduce" class="fh5co-sub-ddown">关于我们</a>
                         </li>
                         <li><a href="/teacher">师资介绍</a></li>
                         <li>
