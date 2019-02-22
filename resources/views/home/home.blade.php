@@ -10,8 +10,8 @@
                                 <div class="col-md-7">
                                     <h2>专业的瑜伽培训机构</h2>
                                     <h2>澳洲亚太瑜伽联盟</h2>
-                                    <h2>中国区唯一培训学校</h2>
-                                    <p><span>澳洲亚太瑜伽联盟 <i class="icon-heart3"></i> 中国区唯一培训学校</span></p>
+                                    <h2>中国区唯一培训基地</h2>
+                                    <p><span>澳洲亚太瑜伽联盟 <i class="icon-heart3"></i> 中国区唯一培训基地</span></p>
                                     <span><a class="btn btn-primary" href="/contact">我要报名</a></span>
                                 </div>
                             </div>

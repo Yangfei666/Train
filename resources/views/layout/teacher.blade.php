@@ -1,5 +1,5 @@
 
-<div id="fh5co-team-section" class="fh5co-lightgray-section">
+<div id="fh5co-team-section" class="fh5co-lightgray-section" style="background-color: #fff;">
     <div class="container">
         @include('layout.title',
             [

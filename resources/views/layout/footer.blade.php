@@ -11,7 +11,7 @@
                 <div class="col-md-5 animate-box">
                     <h3 class="section-title">联系我们</h3>
                     <ul class="contact-info">
-                        <li><i class="icon-map-marker"></i><b>地址:</b>成都市锦江区泰合·国际财富中心7栋302号</li>
+                        <li><i class="icon-map-marker"></i><b>地址:</b>上海长宁区愚园路716号3幢203(总部);<br>成都市锦江区泰合国际财富中心7栋302号</li>
                         <li><i class="icon-phone"></i><b>电话:</b>15882124911</li>
                         <li><i class="icon-envelope"></i><b>邮箱:</b>2668482304@qq.com</li>
                         <li><i class="icon-globe2"></i><b>网站:</b>
